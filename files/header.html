@@ -1,0 +1,33 @@
+  <header>
+    <nav id="scroll"> <a id="circle" href="/"><span>RR</span></a>
+      <div id="nav-links">
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/honors/">University</a></li>
+          <li><a href="/resume/">Résumé</a></li>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <a id="hamburger" class="trans"></a>
+      </div>
+    </nav>
+    <script>
+	$("#hamburger").click(function(e) {
+		$("#nav-links > ul").toggleClass("opened");
+		$(this).toggleClass("hover");
+		//$("#nav-links").children("ul").children("li").children("ul").css("width",$("#nav-links").children("ul").children(".submenu").css("width"));
+    });
+
+	$(document).ready(function(e) {
+        $(window).resize();
+
+		$(".content").on("touchstart mousedown",function(e) {
+				if($("#hamburger").hasClass("hover")) {
+					$("#hamburger").click();
+					e.preventDefault();
+					e.stopPropagation();
+				}
+		});
+    });
+	</script>
+  </header>

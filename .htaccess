@@ -1,0 +1,9 @@
+Options +Includes
+
+ErrorDocument 500 /files/500.php
+ErrorDocument 403 /files/403.php
+ErrorDocument 404 /files/404.php
+
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} ^http$
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

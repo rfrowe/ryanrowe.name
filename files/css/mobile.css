@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a img {
+	border: none;
+}
+
+a:link {
+	color: #42413C;
+	text-decoration: underline;
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #004D86;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	padding-bottom: 10px;
+	clear: both;
+	border-bottom-right-radius: 15px;
+}
+.sidebar aside {
+	width: 100%;
+}
+.content {
+	padding: 10px 0;
+	width: 60%;
+	float: left;
+}
+aside {
+	float: left;
+	width: 20%;
+	background-color: #E7E7E7;
+	padding-top: 20px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+	color: #514C4C;
+}
+
+
+.content ul, .content ol {
+	padding: 0 15px 15px 40px;
+}
+
+
+footer {
+	padding: 10px 0;
+	background-color: #004D86;
+	position: relative;
+	clear: both;
+}
+
+.floatr {
+	float: right;
+	margin-left: 8px;
+}
+.floatl {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+header nav {
+	height: 40px;
+	position: absolute;
+	background-color: #004D86;
+}
+header nav a, header nav a:visited, header nav a:link {
+	-webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+	padding: 5px;
+	display: block;
+	width: auto;
+	font-size: 11pt;
+	color: #999;
+	background-color: #0062AA;
+	text-decoration: none;
+	text-align: center;
+}
+header nav a:hover, header nav a:active, header nav a:focus, header nav li.current a {
+	background-color: #004D86;
+	height: 100%;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;
+}
+header nav ul {
+	list-style: none;
+	margin-bottom: 15px;
+	width: 100%;
+}
+header nav li {
+	float: left;
+	width: 20%;
+	border-top: 1px solid #666;
+	-webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+}
+
+#scroll {
+	z-index: 10;
+	width: 960px;
+}
+header nav li:hover, header nav li:active, header nav li:focus, header nav li.current {
+	border-top-color: #004D86;
+}
+address {
+	padding-left: 20px;
+	clear: both;
+	position: relative;}
+
+.right {
+	border-bottom-left-radius: 15px;
+	border: medium none #000000;
+}
+
+.left {
+	border-bottom-right-radius: 15px;
+}
+address a, address a:link, address a:visited{
+	color: #999;
+}
+address a:hover, address a:active, address a:focus {
+	color: #FFF;
+}
+*/
+
+nav {
+	width: 100 vw;
+	height: 3.5vh;
+	margin-top: 0px;
+	background-color: #F9F9F9;
+} header {
+	-webkit-box-shadow: 0px -4px 33px 0px;
+	box-shadow: 0px -4px 33px 0px;
+}
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E2E2E2;
+	margin: 0;
+	padding: 0;
+}
+#circle {
+	background-color: #2956B2;
+	width: 5em;
+	border-radius: 5em;
+	height: 5em;
+	position: absolute;
+	margin-top: 0.5vh;
+	margin-left: 1vw;
+	padding-left: 0px;
+	display: table;
+}
+#circle span {
+	text-align: center;
+	display: table-cell;
+	color: #FFFFFF;
+	font-size: 2.5em;
+	font-weight: bold;
+	/* [disabled]position: absolute; */
+	vertical-align: middle;
+}
+nav a, nav a:visited, nav a:link{
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	color: #000;
+	height: 100%;
+	text-align: center;
+	display: inline-table;
+	float: none;
+	line-height: 3.5em;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 20%;
+}
+nav a:hover, nav a:focus, nav a:active {
+	background-color: #8F98AD;
+}
+#nav-links  {
+	padding-left: 7em;
+	height: 100%;
+	width: 100 vw;
+	position: relative;
+	overflow-y: hidden;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.toggleable {
+	display: block;
+}
+.toggle, .toggleable {
+	padding: 1em;
+}
+.toggle {
+	background-color: #448AFF;
+} .toggle h3 {
+	color: #EBEBEB;
+} .toggle h4 {
+	color: #B5B5B5;
+} .main .course {
+	background: #FFF;
+}.main .course .toggleable img {
+	width: 100%;
+	margin-top: 1em;
+} .toggleable h3.title {
+	clear: both;
+	float: left;
+}
+
+#image {
+	width: 30%;
+	float: left;
+	margin-right: 1em;
+} #podcast {
+	width: 50%;
+	height: 0;
+	padding-bottom: 50%;
+	position: relative;
+	margin-right: 1em;
+	margin-top: 1em;
+	float: left;
+} #podcast iframe {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+} #cube {
+	width: 30%;
+	float: left;
+	margin-right: 1em;
+} #filters {
+	margin-bottom: 2em;
+	overflow: hidden;
+	background-color: #FFF;
+
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-webkitflex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+} #filters div {
+	-webkit-flex-grow: 1;
+	-moz-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+}
+
+.course .toggle {
+	display: table-cell;
+} section .course {
+	display: table-row;
+} .course .toggle button {
+	display: none;
+} .main .course .toggleable img {
+	width: 100%;
+	margin-top: 1em;
+} .course hr {
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+} .filter {
+	float: left;
+    box-sizing: border-box;
+    text-align: center;
+	flex-grow: 1;
+	padding-top: 1em;
+	padding-bottom: 1em;
+} .filter.selected, .filter:hover {
+	background-color: #21447D;
+} .filter.selected h3, .filter:hover h3 {
+	color: #EBEBEB;
+}
+/* .course .toggle.open { enables course toggleability
+	display: table-cell;
+	border-bottom: solid 1px #727272;
+	border-right: solid 1px #727272;
+} .course.open {
+	display: table-row;
+} .course .toggle.open:hover {
+	background-color: unset;
+} .course .toggle.open:hover h3 {
+	color: unset;
+} */
+
+@media only screen and (max-width: 641px){
+	.course .toggle {
+		display: block;
+	}
+}

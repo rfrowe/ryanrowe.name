@@ -1,0 +1,125 @@
+section.main {
+	width: 65%;
+} #resume #contact {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 1em;
+	display: table-cell;
+} #resume #contact h1 {
+	margin-top: 0;
+	margin-bottom: 0.2em;
+	font-size: 4em;
+} #resume #contact h2 {
+	font-size: 3em;
+	line-height: 1em;
+	color: #212121;
+} #resume #contact p {
+	text-indent: 0;
+} #resume #contact p span {
+	color: #21447D;
+	font-weight: bold;
+} #resume #contact a {
+	color: inherit;
+}
+#resume #info {
+	padding-left: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	display: table-cell;
+} #resume #info h2 {
+	text-transform: uppercase;
+	color: #448AFF;
+} #resume #info h4 {
+	margin-bottom: 1em;
+} #resume #info p, #resume #info ul {
+	text-indent: 0;
+	color: #212121;
+	margin-bottom: 0;
+	margin-top: 0;
+} #resume #info ul {
+	margin-top: 0;
+}
+#resume #gradient {
+	display: table-cell;
+	width: 2em;
+	font-size: 0.25em;
+	background: rgba(68,138,255,1);
+	background: -moz-linear-gradient(top, rgba(68,138,255,1) 0%, rgba(68,138,255,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,138,255,1)), color-stop(100%, rgba(68,138,255,0)));
+	background: -webkit-linear-gradient(top, rgba(68,138,255,1) 0%, rgba(68,138,255,0) 100%);
+	background: -o-linear-gradient(top, rgba(68,138,255,1) 0%, rgba(68,138,255,0) 100%);
+	background: -ms-linear-gradient(top, rgba(68,138,255,1) 0%, rgba(68,138,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(68,138,255,1) 0%, rgba(68,138,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448AFF', endColorstr='#448aff', GradientType=0 );
+}
+#resume {
+	display: table;
+	margin-top: 2em;
+}
+#download-bar {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	overflow: hidden;
+    background-color: #FFF;
+}
+#download-bar h3 {
+	padding-top: 1em;
+    padding-bottom: 1em;
+	color: #CFD8DC;
+}
+#download-bar a {
+	text-decoration: none;
+	display: block;
+	background-color: #21447D;
+	text-align: center;
+}
+#download-bar h3:hover {
+	text-shadow: 0.25em 0.25em 0em #448AFF;
+}
+@media only screen and (max-width: 641px){
+	#resume #contact {
+		display: none;
+	}
+	#resume #gradient {
+		margin-left: 0;
+	}
+}
+
+@media only print {
+	#download-bar {
+		display: none;
+	}
+	header {
+		display: none;
+	}
+	article.content {
+		top: 0;
+    	padding: 0;
+	}
+	.content section.main {
+		min-width: 100%;
+		margin: 0;
+	}
+	#resume {
+		font-size: 75%;
+    	margin: 0;
+	}
+	#info p, #info li, #info h3, #info h4 {
+    	line-height: 1em;
+	}
+	#contact p, #info h4 {
+    	color: #3D3D3D;
+	}
+	footer {
+		display: none;
+	}
+	body {
+		background-color: #FFF;
+	}
+	.content p a, .content ol a, .icon {
+		background: none;
+	}
+	.dropshadow {
+    	box-shadow: none;
+	}
+}
