@@ -2,15 +2,15 @@
 	session_start();
 	require_once("./credentials.php");
 	require_once("./CSFR.php");
-	require_once('/files/scripts/autoload.php');
-    require_once("/files/scripts/PHPMailer/PHPMailerAutoload.php");
+	require_once($_SERVER['DOCUMENT_ROOT'].'/files/scripts/autoload.php');
+    require_once($_SERVER['DOCUMENT_ROOT']."/files/scripts/PHPMailer/PHPMailerAutoload.php");
 
 	$recaptcha = new \ReCaptcha\ReCaptcha(Credentials::PRIVKEY);
 	$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 	$email = $_POST['email'];
 	$subject = "Message from portfolio from: " . $_POST['name'];
-	$body = $_POST['content'];t
+	$body = $_POST['content'];
 	if (!$resp->isSuccess()
 	    or !isset($_POST['CSRFName'])
 	    or !isset($_POST['CSRFToken'])
@@ -32,7 +32,7 @@
 		$mail->Port = 465;
 
 		$mail->setFrom(Credentials::USER);
-		$mail->addAddress(Credentials::User, "Ryan Rowe");
+		$mail->addAddress(Credentials::USER, "Ryan Rowe");
 		$mail->addCC($email);
 		$mail->Subject = $subject;
 		$mail->Body = $body;
