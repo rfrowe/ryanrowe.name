@@ -8,30 +8,34 @@
 
     <link href="/files/css/style.css" rel="stylesheet" type="text/css">
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-        <link href="/files/css/honors.css" rel="stylesheet" type="text/css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="/files/scripts/jquery.appear.js"></script>
-        <script src="/files/scripts/analytics.js"></script>
-        <script src="/files/scripts/processing.js"></script>
-        <script src="/files/scripts/scrollbar.js"></script>
+    <link href="/files/css/honors.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/files/scripts/analytics.js"></script>
+    <script src="/files/scripts/processing.js"></script>
+    <script src="/files/scripts/scrollbar.js"></script>
 
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
         <script>
             var postId = 4;
+            var loading = false;
+            var load = true;
 
             $(window).scroll(function () {
-                if (typeof load === 'undefined') {
+                if (load = true) {
                     checkEndlessScroll("endless-scroll");
                 }
             });
 
             function checkEndlessScroll(el) {
                 if (isInView(document.getElementById(el))) {
-                    $("#all").click();
-                    getPosts();
+                    //$("#all").click();
+                    if(!loading) {
+                        loading = true;
+                        getPosts();
+                    }
                 }
             }
 
@@ -39,18 +43,18 @@
                 $.ajax({
                     type: "POST",
                     url: "./load.php",
-                    data: "?id=" + postId,
+                    data: {id: postId},
                     // serializes the form's elements.
                     dataType: "html",
                     success: function (data) {
-                        if (data.length == 0) {
-                            load = false;
-                        }
                         $("#courses").append(data);
+                        stagger($(".toggle"));
                         postId += 3;
+                        loading = false;
                     },
-                    error: function () {
-                        alert("There was an error fetching older posts");
+                    error: function (jqXHR) {
+                        load = false;
+                        $("#courses").append(jqXHR.responseText);
                     }
                 });
             }
@@ -78,6 +82,12 @@
                         courses = $('.toggle')
                     } else {
                         el = $('.' + this.id).fadeIn(300);
+                        if(el.length == 0 && load == true) {
+                            if(!loading) {
+                                loading = true;
+                                getPosts();
+                            }
+                        }
                         $('.course').not(el).fadeOut(300);
                         courses = $('.' + this.id + ' .toggle');
                     }

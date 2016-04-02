@@ -11,7 +11,11 @@ $password = Credentials::getPassword();
 // This is for the include on ./index.php
 if(!isset($_POST['id'])) {
     $php = true;
+    if(!isset($_GET['id'])) {
     $_POST['id'] = 1;
+    } else {
+        $_POST['id'] = $_GET['id'];
+    }
 }
 
 try {
@@ -28,6 +32,7 @@ try {
     // If there were no results, throw an error
     if($query->rowCount() == 0) {
         header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
+        echo "<h1 style='text-align: center; padding: 1em; margin: 0; color: #FFF; background-color: #3A3A3A;'>No More Posts</h1>";
     } else {
         foreach($results as $row) {
             echo $row["html"] . "\n";
@@ -35,10 +40,11 @@ try {
     }
 } catch(PDOException $e) {
     if($php) {
-        echo "<h1 style='text-align: center; padding: 1em; background-color: #FFF;'>There was an error fetching posts.</h1>";
+        echo "<h1 style='text-align: center; padding: 1em; margin: 0; color: #FFF; background-color: #3A3A3A;'>There was an error fetching posts.</h1>";
         unset($php);
     } else {
         header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
+        echo($e);
     }
     exit();
 }
