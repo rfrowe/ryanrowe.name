@@ -60,6 +60,21 @@
                 CatFax is a cat fact delivery service. It delivers cat facts with automated SMS delivery. The application is written in Java and runs day and night to meet our subscriber&lsquo;s needs.
                 </div>
             </section> -->
+            <section class="work">
+            	<div class="toggle trans">
+                    <button class="dropdown trans"></button>
+                    <h3>Practice-It, University of Washington CS Department <a href="http://practiceit.cs.washington.edu" class="visit dropshadow">Visit</a></h3>
+                    <h4>Seattle, Washington — 2016</h4>
+                </div>
+                <div class="toggleable">
+                    <p>Worked as part of a four-member faculty team to improve Practice-It, a website run by the University of Washington that is used by hundreds of thousands of people globally to practice and learn programming. Improved frontend usability as well as enhanced backend and added new features to both.</p>
+                    <ul>
+                        <li>Gained experience working on enterprise level software</li>
+                        <li>Collaborated with other team members using version control software</li>
+                        <li>Developed and improved frontend and backend interfaces</li>
+                    </ul>
+                </div>
+            </section>
         	<section class="work">
             	<div class="toggle trans">
                     <button class="dropdown trans"></button>
