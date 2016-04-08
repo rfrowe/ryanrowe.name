@@ -9,13 +9,8 @@ $password = Credentials::getPassword();
 
 // If POST id is not set, default to 1.
 // This is for the include on ./index.php
-if(!isset($_POST['id'])) {
-    $php = true;
-    if(!isset($_GET['id'])) {
-    $_POST['id'] = 1;
-    } else {
-        $_POST['id'] = $_GET['id'];
-    }
+if(!isset($_POST["id"])) {
+    $_POST["id"] = 1;
 }
 
 try {
