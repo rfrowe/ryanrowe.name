@@ -85,6 +85,16 @@
           </ul>
           <br>
 
+          <h3>Practice-It, University of Washington Computer Science Department</h3>
+          <h4>Seattle, Washington — 2016</h4>
+          <p>Worked as part of a four-member faculty team to improve Practice-It, a website run by the University of Washington that is used by hundreds of thousands of people globally to practice and learn programming. Improved frontend usability as well as enhanced backend and added new features to both.</p>
+          <ul>
+              <li>Gained experience working on enterprise level software</li>
+              <li>Collaborated with other team members using version control software</li>
+              <li>Developed and improved frontend and backend interfaces</li>
+          </ul>
+          <br>
+
           <h2>Awards</h2>
           <h3>AP Scholar (2014) and AP Scholar with Distinction (2015)</h3>
           <h4>Received score of 5/5 on all seven Advanced Placement exams taken</h4>
@@ -97,6 +107,7 @@
           	<li>Fluent in HTML, PHP, and Java with experience in iOS and Android development</li>
           	<li>Strong work ethic and desire to resolve problems</li>
           	<li>Adept at Unix and Macintosh systems</li>
+            <li>Skilled with version control software such as Git</li>
           </ul>
         </section>
       </section>
