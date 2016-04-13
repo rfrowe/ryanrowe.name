@@ -85,7 +85,7 @@
           </ul>
           <br>
 
-          <h3>Practice-It, University of Washington Computer Science Department</h3>
+          <h3>Developer, Pracice-It: University of Washington CSE Department</h3>
           <h4>Seattle, Washington — 2016</h4>
           <p>Worked as part of a four-member faculty team to improve Practice-It, a website run by the University of Washington that is used by hundreds of thousands of people globally to practice and learn programming. Improved frontend usability as well as enhanced backend and added new features to both.</p>
           <ul>
