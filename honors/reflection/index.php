@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ryan Rowe &mdash; Who Am I?/title>
+    <title>Ryan Rowe &mdash; Who Am I?</title>
     <meta name="description" content="I cannot say who I am, however, I can say who I was. When I was in high school, I was a good student. I read the assigned readings, memorized the assigned facts, and once I wrote them on a test, I discarded them to prepare for the relentless influx of new non-contextualized and fragmented morsels of information. I came to college, to the University of Washington, because I sought an end to the torrent of indifference and monotony. I chose to apply to the honors department because I did not want to simply take classes within a narrow scope, germane to my interests, while continuing to squirrel away facts for the future like acorns for the winter.">
 
     <link href="/files/css/style.css" rel="stylesheet" type="text/css">
