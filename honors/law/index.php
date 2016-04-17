@@ -23,7 +23,7 @@
   <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
   <article class="content offset">
     <section class="main">
-    	<h1><i>Burwell v. Hobby Lobby Stores, Inc.Read it</i></h1>
+    	<h1><i>Burwell v. Hobby Lobby Stores, Inc.</i></h1>
     	<section class="text dropshadow">
             <p>Hobby Lobby is an arts and crafts supply company founded and owned by David Green
             that is privately held and employs over 23,000 people. Green explicitly operates his business
