@@ -59,6 +59,7 @@
                     <img class="slideshow inactive" alt="A rainbow on NE Campus Pkwy" src="/files/images/rainbow.jpg" width="3409" height="1173">
                     <img class="slideshow inactive" alt="The Seattle skyline" src="/files/images/city.jpg" width="3409" height="1173">
                     <img class="slideshow inactive" alt="An art exhibit at the Henry Art Museum" src="/files/images/henry.jpg" width="3409" height="1173">
+                    <img class="slideshow inactive" alt="NYC Skyline" src="/files/images/NYC.jpg">
                 </section>
                 <!--end #main-image-->
                 <section id="welcome-shadow"></section>
