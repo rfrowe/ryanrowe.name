@@ -43,7 +43,7 @@
         <section id="gradient"></section>
         <section id="info">
           <h2>Summary</h2>
-          <p>Computer programmer currently attending the University of Washington. Programming for over 7 years despite no formal education prior to 10th grade. Created several iPhone apps, coded and managed website for 3 years, and received a ‘5’ on AP Computer Science exam by self-study guided by determination and impulse to learn.</p><br>
+          <p>Computer programmer currently attending the University of Washington. Programming for over 7 years despite no formal education prior to 10th grade. Created several iPhone apps, coded and managed website for 3 years, and received a &lsquo;5&rsquo; on AP Computer Science exam by self-study guided by determination and impulse to learn.</p><br>
 
           <h2>Education</h2>
           <h3>University of Washington</h3>
