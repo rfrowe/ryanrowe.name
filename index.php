@@ -75,7 +75,7 @@
                         </p>
                         <section id="social-links" class="dropshadow">
                             <div class="filter trans linked-in">
-                                <a target="_blank" href="https://www.linkedin.com/in/ryan-rowe-499423112" title="LinkedIn"></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/ryanfrowe" title="LinkedIn"></a>
                             </div>
                             <div class="filter trans github">
                                 <a target="_blank" href="https://github.com/rfrowe" title="GitHub"></a>
