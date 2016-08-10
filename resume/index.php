@@ -37,7 +37,7 @@
           <p>Contact<br>
             <span><a href="tel:4405704611">(440) 570-4611</a><br>
             <br>
-            <a href="mailto:rfrowe@uw.edu">rfrowe@uw.edu</a><br>
+            <a href="mailto:rfrowe@cs.uw.edu">rfrowe@cs.uw.edu</a><br>
             <a href="mailto:rfrowe@uw.edu">ryanf.rowe@gmail.com</a></span></p>
         </section>
         <section id="gradient"></section>
@@ -47,10 +47,10 @@
 
           <h2>Education</h2>
           <h3>University of Washington</h3>
-          <h4>Bachelor of Science in Computer Science — 2019 (expected)</h4>
-          <p>GPA of 3.97. Relevant courses:</p>
+          <h4>Bachelor of Science in Computer Science — 2019</h4>
+          <p>GPA of 3.94. Relevant courses:</p>
           <ul>
-            <li>Introduction to Java Programming I & II</li>
+            <li>Introduction to Java Programming I &amp; II</li>
             <li>Calculus with Analytical Geometry</li>
           </ul>
           <br>
