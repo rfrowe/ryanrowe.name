@@ -67,7 +67,7 @@
           <h2>Experience</h2>
           <h3>Webmaster, Unitarian Universalist Ohio-Meadville District</h3>
           <h4>Westlake, Ohio — 2011-2014</h4>
-          <p>As webmaster, was charged with maintaining website to provide information to an estimated 300 people in OH, PA, and WV for church youth group. During course of work utilized Adobe Dreamweaver to manage project and publish code. Archived version visible at http://ryanrowe.name/work/omdyac/.</p>
+          <p>As webmaster, was charged with maintaining website to provide information to an estimated 300 people in OH, PA, and WV for church youth group. During course of work utilized Adobe Dreamweaver to manage project and publish code. Archived version visible at <a href="http://ryanrowe.name/work/omdyac/">http://ryanrowe.name/work/omdyac/</a>.</p>
           <ul>
             <li>Completely redesigned website frontend and backend, requiring over 600 hours of work</li>
             <li>Integrated PHP server-side scripting and MySQL to generate dynamic web content</li>
