@@ -55,11 +55,11 @@
         <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
             <article class="content">
                 <section id="main-image">
-                    <img alt="Me looking pensive on a lake" src="/files/images/lake.jpg" width="3409" height="1173">
-                    <img class="slideshow inactive" alt="A rainbow on NE Campus Pkwy" src="/files/images/rainbow.jpg" width="3409" height="1173">
-                    <img class="slideshow inactive" alt="The Seattle skyline" src="/files/images/city.jpg" width="3409" height="1173">
-                    <img class="slideshow inactive" alt="An art exhibit at the Henry Art Museum" src="/files/images/henry.jpg" width="3409" height="1173">
-                    <img class="slideshow inactive" alt="NYC Skyline" src="/files/images/NYC.jpg">
+                    <img alt="Me looking pensive on a lake" src="/images/lake.jpg" width="3409" height="1173">
+                    <img class="slideshow inactive" alt="A rainbow on NE Campus Pkwy" src="/images/rainbow.jpg" width="3409" height="1173">
+                    <img class="slideshow inactive" alt="The Seattle skyline" src="/images/city.jpg" width="3409" height="1173">
+                    <img class="slideshow inactive" alt="An art exhibit at the Henry Art Museum" src="/images/henry.jpg" width="3409" height="1173">
+                    <img class="slideshow inactive" alt="NYC Skyline" src="/images/NYC.jpg">
                 </section>
                 <!--end #main-image-->
                 <section id="welcome-shadow"></section>

@@ -81,7 +81,7 @@
                     <h3>Random Cube, CSE 390 HA <a class="visit dropshadow" href="/work/RandomCube/">Try it</a></h3>
                     <h4>Seattle, WA — 2015</h4>
                 </div>
-                <div class="toggleable"><img src="/files/images/cube.png" alt="A randomly generated cube" id="cube"><p>In this class, we were charged with creating our own algorithmic art using a programming langage called Processing. I created a program that generates random formulae using the sin, cos, average, and multiplication functions. These functions always return values in the interval [-1,1]. The functions are generated at a recursive level of complexity. A level 1 formula may be <span class="code">cos(&pi;x)</span> while a level 3 may be <span class="code">(sin(&pi;y) * sin(&pi;x) + (cos(&pi;z) + cos(&pi;y)) / 2.0) / 2.0</span>. The program then uses three formulae to calclate RGB values for different (x,y,z) coordinates on a cube. The results look amazing and have incredible sinusoidal patterns.</p><div style="clear:both;"></div></div>
+                <div class="toggleable"><img src="/images/cube.png" alt="A randomly generated cube" id="cube"><p>In this class, we were charged with creating our own algorithmic art using a programming langage called Processing. I created a program that generates random formulae using the sin, cos, average, and multiplication functions. These functions always return values in the interval [-1,1]. The functions are generated at a recursive level of complexity. A level 1 formula may be <span class="code">cos(&pi;x)</span> while a level 3 may be <span class="code">(sin(&pi;y) * sin(&pi;x) + (cos(&pi;z) + cos(&pi;y)) / 2.0) / 2.0</span>. The program then uses three formulae to calclate RGB values for different (x,y,z) coordinates on a cube. The results look amazing and have incredible sinusoidal patterns.</p><div style="clear:both;"></div></div>
             </section>
         	<section class="work">
             	<div class="toggle trans">
@@ -89,7 +89,7 @@
                     <h3>Ohio Supercomputing Center Summer Institute <a class="visit dropshadow" href="/work/OSCSI/">Watch it</a></h3>
                     <h4>Columbus, OH — 2012</h4>
                 </div>
-                <div class="toggleable"><img src="/files/images/oscsi.jpg" alt="Picture processing of Sun's corona" id="oscsi"><p>I was one of 16 students selected to attend SI, a two ­week residential program that gives gifted Ohio high school students entering their sophomore, junior or senior year project-­based, hand-s­on learning. Working in small peer teams, we used supercomputers for practical applications such as solving complex science and engineering problems, conducting network forensics to catch hackers, studying the spread of the bird flu and designing computer games. My team performed image analysis of NASA satallite images using MATLAB in order to identify new comets and presented out findings to over 100 people.</p><div style="clear:both;"></div></div>
+                <div class="toggleable"><img src="/images/oscsi.jpg" alt="Picture processing of Sun's corona" id="oscsi"><p>I was one of 16 students selected to attend SI, a two ­week residential program that gives gifted Ohio high school students entering their sophomore, junior or senior year project-­based, hand-s­on learning. Working in small peer teams, we used supercomputers for practical applications such as solving complex science and engineering problems, conducting network forensics to catch hackers, studying the spread of the bird flu and designing computer games. My team performed image analysis of NASA satallite images using MATLAB in order to identify new comets and presented out findings to over 100 people.</p><div style="clear:both;"></div></div>
             </section>
             <section class="work">
             	<div class="toggle trans">
@@ -98,7 +98,7 @@
                     <h4>Westlake, Ohio — 2011-2014</h4>
                 </div>
                 <div class="toggleable">
-                    <img src="/files/images/omdyac.jpg" alt="Screenshot of the website">
+                    <img src="/images/omdyac.jpg" alt="Screenshot of the website">
                     <p>As webmaster, was charged with maintaining website to provide information to an estimated 300 people in OH, PA, and WV for church youth group. During course of work utilized Adobe Dreamweaver to manage project and publish code.</p>
                     <ul>
                         <li>Completely redesigned website frontend and backend, requiring over 600 hours of work</li>

@@ -122,7 +122,7 @@ address {
 } .content p a, .content ol a, .icon {
 	padding-right: 0.8em;
 	text-decoration: none;
-	background: transparent url("/files/images/link_black.svg") right top no-repeat;
+	background: transparent url("/images/link_black.svg") right top no-repeat;
 	background-size: 0.8em 0.8em;
 } a.visit {
 	-webkit-transition: all 0.3s ease-out;
@@ -135,7 +135,7 @@ address {
 	text-decoration: none;
 	float: right;
 	border: 1px solid #455A64;
-	background: #448AFF url("/files/images/link_white.svg") right center no-repeat;
+	background: #448AFF url("/images/link_white.svg") right center no-repeat;
 	font-size: 1em;
 	padding-right: 1.5em;
 	padding-left: 0.5em;
@@ -225,7 +225,7 @@ section.main {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: transparent url(/files/images/hamburger.svg) center no-repeat;
+	background: transparent url(/images/hamburger.svg) center no-repeat;
 	background-size: 3em 3em;
 } #hamburger.hover {
 	-webkit-box-shadow: inset 0px 0px 1em #000;

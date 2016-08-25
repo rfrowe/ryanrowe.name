@@ -149,7 +149,7 @@ address {
 } .content p a {
 	padding-right: 0.8em;
 	text-decoration: none;
-	background: transparent url("/files/images/link_black.svg") right top no-repeat;
+	background: transparent url("/images/link_black.svg") right top no-repeat;
 	background-size: 0.8em 0.8em;
 } a.visit {
 	-webkit-transition: all 0.3s ease-out;
@@ -162,7 +162,7 @@ address {
 	text-decoration: none;
 	float: right;
 	border: 1px solid #455A64;
-	background: #448AFF url("/files/images/link_white.svg") right center no-repeat;
+	background: #448AFF url("/images/link_white.svg") right center no-repeat;
 	font-size: 1em;
 	padding-right: 1.5em;
 	padding-left: 0.5em;
@@ -306,7 +306,7 @@ form.email {
 	margin-right: 1em;
 	float: right;
 	border-radius: 0.5em;
-	background: transparent url(/files/images/hamburger.svg) center no-repeat;
+	background: transparent url(/images/hamburger.svg) center no-repeat;
 } #hamburger:hover, #hamburger:active {
 	background-color: #8F98AD;
 }
