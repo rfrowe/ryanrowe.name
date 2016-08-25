@@ -9,6 +9,7 @@
     <title>Ryan Rowe's Portfolio</title>
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+    <link href="/css/slideshow.css" rel="stylesheet" type="text/css">
 
     <script>
         // Unset scrollbar.js
