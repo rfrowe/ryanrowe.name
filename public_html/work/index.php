@@ -6,17 +6,8 @@
     <meta name="description" content="A record of my previous work experiences and projects that I have worked on such as web design and app development.">
     <title>Ryan Rowe &mdash; Work</title>
 
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-    <script src="/files/js/analytics.js"></script>
-    <script src="/files/js/processing.js"></script>
-    <script src="/files/js/scrollbar.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
     <script>
 	$(document).ready(function(e) {

@@ -8,45 +8,40 @@
     <meta name="description" content="I'm currently a student at the University of Washington. I've been programming for over 7 years despite having no germane formal education. I have created several iPhone applications as well as designed and maintained a few websites. After receiving a '5' on the AP Computer Science exam and achieving a grade of 4.0 in Introduction to Java Programming and 3.9 in Calculus with Analytical Geometry, I am well on my way toward my dream of majoring in Computer Science.">
     <title>Ryan Rowe's Portfolio</title>
 
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <link href="/css/slideshow.css" rel="stylesheet" type="text/css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="/files/js/analytics.js"></script>
-    <!-- <script src="/files/scrollbar.js"></script> -->
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
 
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+    <script>
+        // Unset scrollbar.js
+        $(window).unbind("scroll");
+        $(window).unbind("resize");
 
-        <script>
-            function changeMargin() {
-                $('#welcome').css("margin-top", "" + (parseInt($("#nav-links").css("min-height")) + $("#main-image").height()) + "px");
-            }
+        function changeMargin() {
+            $('#welcome').css("margin-top", "" + (parseInt($("#nav-links").css("min-height")) + $("#main-image").height()) + "px");
+        }
 
-            window.onresize = function () {
-                changeMargin();
-            };
+        window.onresize = function () {
+            changeMargin();
+        };
 
-            $(document).ready(function (e) {
-                counter = 0;
-                slides = document.querySelectorAll("#main-image img");
+        $(document).ready(function (e) {
+            counter = 0;
+            slides = document.querySelectorAll("#main-image img");
 
-                setInterval(advance, 5500);
+            setInterval(advance, 5500);
 
-                function advance() {
-                    $(slides[counter]).addClass("inactive");
+            function advance() {
+                $(slides[counter]).addClass("inactive");
 
-                    if (counter === slides.length - 1) {
-                        counter = 0;
-                    } else {
-                        counter++;
-                    }
-
-                    $(slides[counter]).removeClass("inactive");
+                if (counter === slides.length - 1) {
+                    counter = 0;
+                } else {
+                    counter++;
                 }
-            });
-        </script>
+
+                $(slides[counter]).removeClass("inactive");
+            }
+        });
+    </script>
 
 </head>
 

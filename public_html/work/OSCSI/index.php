@@ -14,16 +14,7 @@
 	}
 	</style>
 
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-    <script src="/files/js/analytics.js"></script>
-    <script src="/files/js/processing.js"></script>
-    <script src="/files/js/scrollbar.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
 
     <script>
 	$(document).ready(function(e) {

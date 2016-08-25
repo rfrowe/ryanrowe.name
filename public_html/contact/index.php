@@ -9,17 +9,8 @@ require_once("./CSFR.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Rowe &mdash; Contact Me</title>
 
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <link href="/css/contact.css" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-    <script src="/files/js/analytics.js"></script>
-    <script src="/files/js/scrollbar.js"></script>
-    <!-- <script src="/files/scrollbar.js"></script> -->
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+	<link href="/css/contact.css" rel="stylesheet" type="text/css">
 
     <?php
     $content = "";
