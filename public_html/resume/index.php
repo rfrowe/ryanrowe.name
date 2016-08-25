@@ -10,8 +10,8 @@
 <link href="/css/resume.css" rel="stylesheet" type="text/css">
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-<script src="/files/scripts/analytics.js"></script>
-<script src="/files/scripts/scrollbar.js"></script>
+<script src="/js/analytics.js"></script>
+<script src="/js/scrollbar.js"></script>
 
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

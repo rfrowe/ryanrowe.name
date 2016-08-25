@@ -2,8 +2,8 @@
 	session_start();
 	require_once("./credentials.php");
 	require_once("./CSFR.php");
-	require_once($_SERVER['DOCUMENT_ROOT'].'/files/scripts/autoload.php');
-    require_once($_SERVER['DOCUMENT_ROOT']."/files/scripts/PHPMailer/PHPMailerAutoload.php");
+	require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/ReCaptcha/autoload.php');
+    require_once($_SERVER['DOCUMENT_ROOT']."/files/php/PHPMailer/PHPMailerAutoload.php");
 
 	$recaptcha = new \ReCaptcha\ReCaptcha(Credentials::PRIVKEY);
 	$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
