@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I created a program that generates random formulae using the sin, cos, average, and multiplication functions. These functions always return values in the interval [-1,1]. The functions are generated at a recursive level of complexity. The program then uses three formulae to calclate RGB values for different (x,y,z) coordinates on a cube. The results look amazing and have incredible sinusoidal patterns.">
     <title>Ryan Rowe's Portfolio</title>
 
@@ -58,7 +57,7 @@
 	}
     </style>
 
-	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 	<script src="/files/js/processing.js"></script>
 
     <script>

@@ -6,10 +6,9 @@ require_once("./CSFR.php");
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Rowe &mdash; Contact Me</title>
 
-	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 	<link href="/css/contact.css" rel="stylesheet" type="text/css">
 
     <?php

@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A presentation I gave outlining how my group used MATLAB to analyse pictures from NASA's LASCO C2 telescope to search for new comets.">
     <title>Ryan Rowe's Portfolio</title>
 
@@ -14,7 +13,7 @@
 	}
 	</style>
 
-	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 
     <script>
 	$(document).ready(function(e) {

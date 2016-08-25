@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An archived version of a website I made for the Unitarian Universalist Association Ohio-Meadville District">
     <title>Ryan Rowe's Portfolio</title>
 
@@ -24,7 +23,7 @@
 	}
 	</style>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 
     <script>
         // Unset scrollbar.js

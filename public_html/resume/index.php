@@ -2,13 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Computer programmer currently attending the University of Washington. Programming for over 7 years despite no formal education prior to 10th grade. Created several iPhone apps, coded and managed website for 3 years, and received a ‘5’ on AP Computer Science exam by self-study guided by determination and impulse to learn.">
 
     <title>Ryan Rowe &mdash; Resume</title>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
     <link href="/css/resume.css" rel="stylesheet" type="text/css">
 </head>
 

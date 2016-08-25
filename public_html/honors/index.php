@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Rowe &mdash; Honors Portfolio</title>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
     <link href="/css/honors.css" rel="stylesheet" type="text/css">
 
     <script>

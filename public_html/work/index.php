@@ -2,11 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A record of my previous work experiences and projects that I have worked on such as web design and app development.">
     <title>Ryan Rowe &mdash; Work</title>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/imports.php") ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css">
 
     <script>
