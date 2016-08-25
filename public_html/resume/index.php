@@ -6,8 +6,8 @@
 <meta name="description" content="Computer programmer currently attending the University of Washington. Programming for over 7 years despite no formal education prior to 10th grade. Created several iPhone apps, coded and managed website for 3 years, and received a ‘5’ on AP Computer Science exam by self-study guided by determination and impulse to learn.">
 
 <title>Ryan Rowe &mdash; Resume</title>
-<link href="/files/css/style.css" rel="stylesheet" type="text/css">
-<link href="/files/css/resume.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="/css/resume.css" rel="stylesheet" type="text/css">
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
 <script src="/files/scripts/analytics.js"></script>

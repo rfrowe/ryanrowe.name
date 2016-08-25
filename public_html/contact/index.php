@@ -9,9 +9,9 @@ require_once("./CSFR.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Rowe &mdash; Contact Me</title>
 
-    <link href="/files/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <link href="/files/css/contact.css" rel="stylesheet" type="text/css">
+    <link href="/css/contact.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
     <script src="/files/scripts/analytics.js"></script>
     <script src="/files/scripts/scrollbar.js"></script>

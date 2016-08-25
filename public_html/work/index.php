@@ -6,9 +6,9 @@
     <meta name="description" content="A record of my previous work experiences and projects that I have worked on such as web design and app development.">
     <title>Ryan Rowe &mdash; Work</title>
 
-    <link href="/files/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <link href="/files/css/work.css" rel="stylesheet" type="text/css">
+    <link href="/css/work.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
     <script src="/files/scripts/analytics.js"></script>
     <script src="/files/scripts/processing.js"></script>

@@ -8,9 +8,9 @@
     <meta name="description" content="I'm currently a student at the University of Washington. I've been programming for over 7 years despite having no germane formal education. I have created several iPhone applications as well as designed and maintained a few websites. After receiving a '5' on the AP Computer Science exam and achieving a grade of 4.0 in Introduction to Java Programming and 3.9 in Calculus with Analytical Geometry, I am well on my way toward my dream of majoring in Computer Science.">
     <title>Ryan Rowe's Portfolio</title>
 
-    <link href="/files/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
-    <link href="/files/css/slideshow.css" rel="stylesheet" type="text/css">
+    <link href="/css/slideshow.css" rel="stylesheet" type="text/css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/files/scripts/analytics.js"></script>
     <!-- <script src="/files/scrollbar.js"></script> -->

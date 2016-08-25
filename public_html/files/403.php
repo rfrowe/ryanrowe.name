@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Rowe's Portfolio</title>
 
-    <link href="/files/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
     <script src="/files/scripts/analytics.js"></script>
