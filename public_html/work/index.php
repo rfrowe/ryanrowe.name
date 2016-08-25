@@ -10,9 +10,9 @@
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-    <script src="/js/analytics.js"></script>
-    <script src="/js/processing.js"></script>
-    <script src="/js/scrollbar.js"></script>
+    <script src="/files/js/analytics.js"></script>
+    <script src="/files/js/processing.js"></script>
+    <script src="/files/js/scrollbar.js"></script>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
