@@ -36,7 +36,7 @@
     float: none;
     line-height: $sidenav-item-height;
 
-    &.active { background-color: rgba(0,0,0,.05); }
+    &.active { background-color: rgba(0,0,0,.35); }
   }
 
   a {
@@ -48,7 +48,7 @@
     line-height: $sidenav-item-height;
     padding: 0 ($sidenav-padding * 2);
 
-    &:hover { background-color: rgba(0,0,0,.05);}
+    &:hover { background-color: rgba(0,0,0,.15);}
 
     &.btn, &.btn-large, &.btn-flat, &.btn-floating {
       margin: 10px 15px;
@@ -190,6 +190,27 @@
 
     .userView {
       padding: $sidenav-padding $sidenav-padding 0;
+    }
+  }
+
+  .side-nav {
+    &.top-mobile {
+      width: 100%;
+      height: auto;
+      padding-bottom: 0;
+      z-index: 0;
+      transform: translateX(0) translateY(-105%);
+
+      @media #{$medium-and-down} {
+        display: flex;
+        align-items: center;
+      }
+
+      @media #{$small-and-down} {
+        top: $navbar-height-mobile;
+      } @media #{$medium-and-up} {
+        top: $navbar-height;
+      }
     }
   }
 }

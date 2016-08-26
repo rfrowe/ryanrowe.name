@@ -1,33 +1,40 @@
-  <header>
-    <nav id="scroll"> <a id="circle" href="/"><span>RR</span></a>
-      <div id="nav-links">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/honors/">University</a></li>
-          <li><a href="/resume/">Résumé</a></li>
-          <li><a href="/work/">Work</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-        <a id="hamburger" class="trans"></a>
-      </div>
-    </nav>
-    <script>
-	$("#hamburger").click(function(e) {
-		$("#nav-links > ul").toggleClass("opened");
-		$(this).toggleClass("hover");
-		//$("#nav-links").children("ul").children("li").children("ul").css("width",$("#nav-links").children("ul").children(".submenu").css("width"));
-    });
-
-	$(document).ready(function(e) {
-        $(window).resize();
-
-		$(".content").on("touchstart mousedown",function(e) {
-				if($("#hamburger").hasClass("hover")) {
-					$("#hamburger").click();
-					e.preventDefault();
-					e.stopPropagation();
-				}
-		});
-    });
-	</script>
-  </header>
+<header>
+    <div class="navbar-fixed hide-on-large-only">
+        <nav>
+            <a href="/" class="brand-logo left">Ryan Rowe</a>
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a href="#" data-activates="slidey-nav" class="button-collapse waves-effect waves-light"><i
+                            class="material-icons">menu</i></a>
+                </li>
+            </ul>
+        </nav>
+    </div> <!-- end .navbar-fixed -->
+    <ul id="slidey-nav" class="light-blue lighten-5 side-nav fixed top-mobile row">
+        <div id="icon" class="white center col s4 l12">
+            <img src="//placehold.it/500x500" class="container responsive-img circle">
+        </div>
+        <div id="nav-links" class="col s8 l12">
+            <li><a href="/">Home</a></li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">University<i
+                                class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="/honors/#freshman">Freshman</a></li>
+                                <li><a href="/honors/#sophomore">Sophomore</a></li>
+                                <li><a href="/honors/#junior">Junior</a></li>
+                                <li><a href="/honors/#senior">Senior</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/resume/">Résumé</a></li>
+            <li><a href="/work/">Work</a></li>
+            <li><a id="contact-us" class="modal-trigger contact-us" href="#contact">Contact</a></li>
+        </div>
+    </ul>
+</header>
