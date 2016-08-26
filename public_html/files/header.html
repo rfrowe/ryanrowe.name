@@ -1,4 +1,15 @@
 <header>
+    <div id="FontAwesome_fallback" style="display:none"></div>
+    <script async>(function($) {
+        var $span = $('<span class="fa" style="display:none"></span>');
+        $('#FontAwesome_fallback').append($span)
+        var f = $span.css('fontFamily');
+        if (f !== 'FontAwesome') {
+            $('head').append('<link href="/css/font-awesome.min.css" rel="stylesheet">');
+        }
+    })(jQuery);
+    </script>
+
     <div class="navbar-fixed hide-on-large-only">
         <nav>
             <a href="/" class="brand-logo left">Ryan Rowe</a>

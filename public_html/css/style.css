@@ -36,12 +36,6 @@
     opacity: 0; /* for staggered effect */
 }
 
-/* Preload images so there's no graphics delay on hover */
-body:after{
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content: url("/images/github_white.svg") url("/images/facebook_white.svg") url("/images/linkedin_white.svg") url("/images/email_white.svg");
-}
-
 #social-links a i {
     border: 0.15rem white solid;
     border-radius: 100%;

@@ -2,3 +2,5 @@ credentials.php
 .DS_Store
 /.idea/workspace.xml
 /out/
+/public_html/css/.sass-cache/
+/public_html/css/materialize.css.map

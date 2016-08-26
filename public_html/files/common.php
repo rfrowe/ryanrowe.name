@@ -3,13 +3,14 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/css/materialize.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/files/js/jquery-2.2.4.min.js">\x3C/script>')</script>
     <script src="/files/js/materialize.min.js"></script>
     <script src="/files/js/analytics.js"></script>
     <script src="/files/js/topNav.js"></script>
     <script src="/files/js/jquery.form.min.js"></script>
-    <script src="//use.fontawesome.com/af56734902.js"></script>
 
     <script>
         var target = window; // this can be any scrollable element
