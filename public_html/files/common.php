@@ -23,6 +23,14 @@
 
         // For hamburger menu
         $(function() {
+            // Fix for nav drag area height when collapsible opens
+            $("#university").click(function() {
+                setTimeout(function() {
+                    $(".drag-target").css({top: $("header").height() + $("#slidey-nav").height() +
+                    "px"});
+                }, 350); // from collapsible.js
+            });
+
             $(".button-collapse").topNav();
 
             // Contact us modal form
