@@ -16,7 +16,7 @@
         $('body').append(dragTarget);
 
         menu_id.css('transform', 'translateX(0) translateY(-105%)');
-        dragTarget.css({'left': 0, 'right': 0, 'width': "75%", 'height': 30, 'z-index': 999}); // Add Touch Area
+        dragTarget.css({'left': 0, 'right': 0, 'width': "75%", 'height': 48, 'z-index': 999}); // Add Touch Area
 
         // If fixed sidenav, bring menu out
         if (menu_id.hasClass('fixed')) {
@@ -56,12 +56,6 @@
         function removeMenu(restoreNav) {
           panning = false;
           menuOut = false;
-          // Reenable scrolling
-          $("body").removeClass("no-scroll");
-          $('body').css({
-            overflow: '',
-            width: ''
-          });
 
           $('#sidenav-overlay').velocity({opacity: 0}, {duration: 200,
               queue: false, easing: 'easeOutQuad',
@@ -70,13 +64,19 @@
             } });
 
           // Reset phantom div
-          dragTarget.css({height: '30', width: '75%', top: 0});
+          dragTarget.css({height: '48', width: '75%', top: 0});
           menu_id.velocity(
             {'translateX': '0', 'translateY': '-105%'},
             { duration: 200,
               queue: false,
               easing: 'easeOutCubic',
               complete: function() {
+                // Reenable scrolling
+                $("body").removeClass("no-scroll");
+                $('body').css({
+                  overflow: '',
+                  width: ''
+                });
                 if (restoreNav === true) {
                   // Restore Fixed sidenav
                   menu_id.removeAttr('style');
@@ -131,7 +131,6 @@
             if (y < (height / 2)) { menuOut = false; }
             // Right Direction
             else if (y >= (height / 2)) { menuOut = true; }
-            console.log("y: " + y + "\t translateY(" + (y - height) + "px)\t height: "+ height);
             menu_id.css('transform', 'translateX(0) translateY(' + (y - height) + 'px)');
 
 
@@ -159,7 +158,6 @@
             // If velocityX <= 0.3 then the user is flinging the menu closed so ignore menuOut
             if ((menuOut && velocityY <= 0.3) || velocityY < -0.5) {
               // Return menu to open
-              console.log("reopen");
               if (topPos !== 0) {
                 menu_id.velocity({'translateX': '0', 'translateY': [0, topPos]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
               }
@@ -169,23 +167,25 @@
               menuOut = true;
             }
             else if (!menuOut || velocityY > 0.3) {
-              // Enable Scrolling
-              $('body').removeClass("no-scroll");
-              $('body').css({
-                overflow: '',
-                width: ''
-              });
               // Slide menu closed
               menu_id.velocity({'translateX': '0', 'translateY': [-1 * height - 10, topPos]},
-                               {duration: 200, queue: false, easing: 'easeOutQuad', complete: function() { menuOut = false }});
+                  {
+                    duration: 200, queue: false, easing: 'easeOutQuad', complete: function () {
+                    menuOut = false;
+                    // Enable Scrolling
+                    $('body').removeClass("no-scroll");
+                    $('body').css({
+                      overflow: '',
+                      width: ''
+                    });
+                    }
+                  });
               $('#sidenav-overlay').velocity({opacity: 0 }, {duration: 200, queue: false, easing: 'easeOutQuad',
                 complete: function () {
                   $(this).remove();
                 }});
-              dragTarget.css({height: '30px', 'width': '75%', 'z-index': 999, 'top': ''});
+              dragTarget.css({height: '48px', 'width': '75%', 'z-index': 999, 'top': ''});
             }
-
-
           }
         });
 

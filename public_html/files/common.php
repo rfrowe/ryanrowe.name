@@ -11,6 +11,19 @@
     <script src="/files/js/jquery.form.min.js"></script>
 
     <script>
+        var target = window; // this can be any scrollable element
+        var last_y = 0;
+        target.addEventListener('touchmove', function(e){
+            var scrolly = target.pageYOffset || target.scrollTop || 0;
+            var direction = e.changedTouches[0].pageY > last_y ? 1 : -1;
+            if(direction>0 && scrolly===0){
+                e.preventDefault();
+            }
+            last_y = e.changedTouches[0].pageY;
+        });
+    </script>
+
+    <script>
         // For footer social links scrollfire, #social-links
         var options=[{
             selector: '#social-links',
