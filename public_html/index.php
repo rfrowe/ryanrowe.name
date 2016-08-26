@@ -9,7 +9,6 @@
     <title>Ryan Rowe's Portfolio</title>
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
-    <link href="/css/index.css" rel="stylesheet" type="text/css">
 
     <script>
         $(document).ready(function (e) {

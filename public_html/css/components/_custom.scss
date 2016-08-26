@@ -10,14 +10,10 @@
   }
 }
 
-#icon {
-  border-bottom: thin solid color("grey", "lighten-1");
-}
-
 #main-image img, #slideshow-spacer img {
   @include transition(opacity 1s linear);
 }
 
 #nav-links a {
-  @include transition(all .1s ease-out);
+  @include transition(all .2s ease-out);
 }
