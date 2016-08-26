@@ -6364,4 +6364,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
 
+#social-links a i {
+  transition: background-color 0.3s ease-out; }
+
+#social-links a:hover i {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #2196F3 !important; }
+
 /*# sourceMappingURL=materialize.css.map */

@@ -9,6 +9,7 @@
     <script src="/files/js/analytics.js"></script>
     <script src="/files/js/topNav.js"></script>
     <script src="/files/js/jquery.form.min.js"></script>
+    <script src="//use.fontawesome.com/af56734902.js"></script>
 
     <script>
         var target = window; // this can be any scrollable element

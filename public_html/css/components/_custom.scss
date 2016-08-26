@@ -17,3 +17,12 @@
 #nav-links a {
   @include transition(all .2s ease-out);
 }
+
+#social-links a i {
+  transition: background-color 0.3s ease-out;
+}
+#social-links a:hover i {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: $footer-bg-color !important;
+}

@@ -35,48 +35,6 @@
 #social-links li {
     opacity: 0; /* for staggered effect */
 }
-#social-links li a {
-    width: 100%;
-}
-.github {
-    background: transparent url("/images/github_black.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.linked-in {
-    background: transparent url("/images/linkedin_black.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.facebook {
-    background: transparent url("/images/facebook_black.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.email {
-    background: transparent url("/images/email_black.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.github:hover {
-    background: transparent url("/images/github_white.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.linked-in:hover {
-    background: transparent url("/images/linkedin_white.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.facebook:hover {
-    background: transparent url("/images/facebook_white.svg") center no-repeat;
-    background-size: 2em 2em;
-}
-
-.email:hover {
-    background: transparent url("/images/email_white.svg") center no-repeat;
-    background-size: 2em 2em;
-}
 
 /* Preload images so there's no graphics delay on hover */
 body:after{
@@ -84,9 +42,19 @@ body:after{
     content: url("/images/github_white.svg") url("/images/facebook_white.svg") url("/images/linkedin_white.svg") url("/images/email_white.svg");
 }
 
+#social-links a i {
+    border: 0.15rem white solid;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+}
 #social-links a {
-    height: 3em;
+    padding-top: 0.65em;
+    text-align: center;
+    height: 4.25em;
+    line-height: 2.8em;
     box-sizing: border-box;
+    width: 100%;
 }
 
 #with-love img {
@@ -142,4 +110,4 @@ header, main, footer {
         padding-left: 0;
     }
 }
-   
+  
