@@ -42,26 +42,30 @@
                     <i class="material-icons right">send</i>
                 </button>
             </div>
-        </form>
-    </div>
+        </form> <!-- end #contact-form -->
+    </div> <!-- end #contact -->
 
     <ul id="social-links" class="row container">
-        <li class="col s3 center"><a class="btn-flat waves-effect white-text" target="_blank"
-                              href="https://www.linkedin.com/in/ryanfrowe" title="LinkedIn"><i
-                    class="fa fa-linkedin"></i></a></li>
-        <li class="col s3 center"><a class="btn-flat waves-effect white-text" target="_blank"
-                              href="https://github.com/rfrowe" title="GitHub">
+        <li class="col s3 center">
+            <a class="btn-flat waves-effect white-text" target="_blank" href="https://www.linkedin.com/in/ryanfrowe" title="LinkedIn">
+                <i class="fa fa-linkedin"></i></a>
+        </li>
+        <li class="col s3 center">
+            <a class="btn-flat waves-effect white-text" target="_blank" href="https://github.com/rfrowe" title="GitHub">
                 <i class="fa fa-code-fork"></i>
-            </a></li>
-        <li class="col s3 center"><a class="btn-flat waves-effect white-text" target="_blank"
-                              href="https://facebook.com/ryanroweboat" title="Facebook">
+            </a>
+        </li>
+        <li class="col s3 center">
+            <a class="btn-flat waves-effect white-text" target="_blank" href="https://facebook.com/ryanroweboat" title="Facebook">
                 <i class="fa fa-facebook"></i>
-            </a></li>
-        <li class="col s3 center"><a class="btn-flat waves-effect white-text modal-trigger contact-us"
-                                     href="#contact" title="Email">
+            </a>
+        </li>
+        <li class="col s3 center">
+            <a class="btn-flat waves-effect white-text modal-trigger contact-us" href="#contact" title="Email">
                 <i class="fa fa-envelope"></i>
             </a></li>
     </ul>
+
     <div class="footer-copyright">
         <div class="container">
             &copy; <?= date("Y"); ?> Ryan Rowe
