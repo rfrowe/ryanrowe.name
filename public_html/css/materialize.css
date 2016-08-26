@@ -6372,4 +6372,22 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   border-color: #FFF;
   color: #2196F3 !important; }
 
+#with-love i {
+  -webkit-animation: mover 1s infinite alternate ease-in-out;
+  -moz-animation: mover 1s infinite alternate ease-in-out;
+  -ms-animation: mover 1s infinite alternate ease-in-out;
+  -o-animation: mover 1s infinite alternate ease-in-out;
+  animation: mover 1s infinite alternate ease-in-out; }
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0.1em); }
+  100% {
+    transform: translateY(-0.2em); } }
+@keyframes mover {
+  0% {
+    transform: translateY(0.1em); }
+  100% {
+    transform: translateY(-0.2em); } }
+
 /*# sourceMappingURL=materialize.css.map */

@@ -26,3 +26,16 @@
   border-color: #FFF;
   color: $footer-bg-color !important;
 }
+
+#with-love i {
+  @include animation(mover 1s infinite alternate ease-in-out);
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0.1em); }
+  100% { transform: translateY(-0.2em); }
+}
+@keyframes mover {
+  0% { transform: translateY(0.1em); }
+  100% { transform: translateY(-0.2em); }
+}

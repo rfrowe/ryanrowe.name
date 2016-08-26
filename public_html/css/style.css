@@ -58,11 +58,12 @@ body:after{
     width: 100%;
 }
 
-#with-love img {
-    top: 0.5em;
-    position: relative;
-    height: 2em;
-    width: auto;
+#with-love i {
+    color: red;
+    /* top: 0.5em; */
+    /* position: relative; */
+    /* height: 2em; */
+    /* width: auto; */
 }
 
 /* Sticky footer */

@@ -51,13 +51,13 @@
 
 // Animation
 
-// @mixin animation($args) {
-//     -webkit-animation: $args;
-//     -moz-animation: $args;
-//     -ms-animation: $args;
-//     -o-animation: $args;
-//     animation: $args;
-// }
+@mixin animation($args) {
+   -webkit-animation: $args;
+   -moz-animation: $args;
+   -ms-animation: $args;
+   -o-animation: $args;
+   animation: $args;
+}
 // @mixin animation-delay($delay) {
 //     -webkit-animation-delay: $delay;
 //     -moz-animation-delay: $delay;

@@ -66,7 +66,7 @@
         <div class="container">
             &copy; <?= date("Y"); ?> Ryan Rowe
             <div class="right" id="with-love">
-                Made with <img draggable="false" alt="Floating heart" src="/images/heart.gif" width="200" height="245"> in Seattle
+                Made with <i class="fa fa-heart-o"></i> in Seattle
             </div>
         </div>
     </div>
