@@ -1,0 +1,41 @@
+@media #{$medium-and-down} {
+  #main-image {
+    top: $navbar-height;
+  }
+}
+
+@media #{$small-and-down} {
+  #main-image {
+    top: $navbar-height-mobile;
+  }
+}
+
+#main-image img, #slideshow-spacer img {
+  @include transition(opacity 1s linear);
+}
+
+#nav-links a {
+  @include transition(all .2s ease-out);
+}
+
+#social-links a i {
+  transition: background-color 0.3s ease-out;
+}
+#social-links a:hover i {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: $footer-bg-color !important;
+}
+
+#with-love i {
+  @include animation(mover 1s infinite alternate ease-in-out);
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0.1em); }
+  100% { transform: translateY(-0.2em); }
+}
+@keyframes mover {
+  0% { transform: translateY(0.1em); }
+  100% { transform: translateY(-0.2em); }
+}
