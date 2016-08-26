@@ -49,6 +49,7 @@ body:after{
     height: 3rem;
 }
 #social-links a {
+    padding: 0;
     padding-top: 0.65em;
     text-align: center;
     height: 4.25em;
