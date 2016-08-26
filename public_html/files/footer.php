@@ -57,8 +57,8 @@
                               href="https://facebook.com/ryanroweboat" title="Facebook">
                 <i class="fa fa-facebook"></i>
             </a></li>
-        <li class="col s3 center"><a class="btn-flat waves-effect white-text" target="_blank"
-                              href="mailto:ry@nrowe.name" title="Email">
+        <li class="col s3 center"><a class="btn-flat waves-effect white-text modal-trigger contact-us"
+                                     href="#contact" title="Email">
                 <i class="fa fa-envelope"></i>
             </a></li>
     </ul>
