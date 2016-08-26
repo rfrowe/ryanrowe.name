@@ -57,6 +57,7 @@
           panning = false;
           menuOut = false;
           // Reenable scrolling
+          $("body").removeClass("no-scroll");
           $('body').css({
             overflow: '',
             width: ''
@@ -108,6 +109,7 @@
             var height = menu_id.height() + top;
             // Disable Scrolling
             var $body = $('body');
+            $body.addClass("no-scroll");
             var oldWidth = $body.innerWidth();
             $body.css('overflow', 'hidden');
             $body.width(oldWidth);
@@ -168,6 +170,7 @@
             }
             else if (!menuOut || velocityY > 0.3) {
               // Enable Scrolling
+              $('body').removeClass("no-scroll");
               $('body').css({
                 overflow: '',
                 width: ''
@@ -196,6 +199,7 @@
 
               // Disable Scrolling
               var $body = $('body');
+              $body.addClass("no-scroll");
               var oldWidth = $body.innerWidth();
               $body.css('overflow', 'hidden');
               $body.width(oldWidth);
