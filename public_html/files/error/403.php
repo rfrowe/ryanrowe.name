@@ -15,7 +15,7 @@
             <div class="card-content">
                 <h1>403! Access Denied</h1>
                 <div class="flow-text">
-                    <p>We couldn&rsquo;t find anything</p>
+                    <p>You shouldn&apos;t go there</p>
                 </div>
             </div>
             <div class="card-action">
