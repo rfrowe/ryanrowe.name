@@ -13,7 +13,7 @@
     <script src="/files/js/jquery.form.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php'); ?>
+    <?php session_start(); require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php'); ?>
 
     <script>
         var target = window; // this can be any scrollable element
@@ -39,8 +39,12 @@
         }];
         Materialize.scrollFire(options);
 
-        // For hamburger menu
         $(function() {
+            // Fire scrollfire if already on page (i.e. if the page is too short)
+            if (isScrolledIntoView("#social-links")) {
+                Materialize.showStaggeredList($("#social-links"));
+            }
+
             // Fix for nav drag area height when collapsible opens
             $("#university").click(function() {
                 setTimeout(function() {
@@ -49,6 +53,7 @@
                 }, 350); // from collapsible.js
             });
 
+            // Initiaize topNav
             $(".button-collapse").topNav();
 
             // Contact us modal form
@@ -59,10 +64,12 @@
                 }
             });
 
+            // Hide nav when you click contact us
             $("#contact-us").click(function() {
                 $('.button-collapse').sideNav('hide');
             });
 
+            // Initialize ajax form
             $("#contact-form").ajaxForm({
                 beforeSubmit: function() {
                     $("#contact").closeModal();
@@ -88,10 +95,20 @@
                 $("#contact-form").find("textarea").trigger('autoresize');
                 $("body").toggleClass("no-scroll");
             }
+
+            function isScrolledIntoView(e) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+
+                var elemTop = $(e).offset().top;
+                var elemBottom = elemTop + $(e).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
         });
     </script>
 
-    <?php session_start(); readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
+    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
 
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
