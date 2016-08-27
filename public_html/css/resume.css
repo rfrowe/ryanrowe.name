@@ -87,7 +87,7 @@ footer.page-footer {
 }
 
 @media only print {
-	header, footer, #download-bar, .divider, .drag-target {
+	header, footer, #download-bar, .divider, .drag-target, #download-grey-area {
 		display: none;
 	}
 	main {
