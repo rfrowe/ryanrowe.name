@@ -11,7 +11,7 @@
     </div>
 
     <div id="contact" class="modal modal-fixed-footer">
-        <form id="contact-form" action="/contact/" method="post">
+        <form id="contact-form" action="/files/php/send.php" method="POST">
             <div class="modal-content grey darken-3 white-text">
                 <h4>Shoot me a message</h4>
 
@@ -22,8 +22,8 @@
                     </div>
                     <div class="input-field col s12 m8 l6">
                         <input id="email" type="email" class="validate" name="email" required>
-                        <label for="email" data-error="That doesn&apos;t look right" data-success="Looks
-                        good">Email</label>
+                        <label for="email" data-error="That doesn&apos;t look right" data-success="I&apos;ll send you a
+                         copy">Email</label>
                     </div>
                 </div>
                 <div class="row">
@@ -33,12 +33,25 @@
                         <label for="message">Message</label>
                     </div>
                 </div>
+                <!--<div class="row">
+                    <div class="input field col s12">
+                        <div class="g-recaptcha" data-sitekey="6LddJhUTAAAAAKmG64hNG_QhqUqn0emEq09MSkdO"></div>
+                    </div>
+                </div>-->
+
+                <!-- For Cross-site request forgery protection -->
+                <input type="hidden" name="CSRFName" value="contact" />
+                <input type="hidden" name="CSRFToken" value="<?php echo csrfguard_generate_token("contact"); ?>" />
             </div>
             <div class="modal-footer">
                 <button class="left red darken-1 btn waves-effect modal-action modal-close" type="button"
-                        name="cancel">Nevermind<i class="material-icons right">not_interested</i></button>
+                        name="cancel">
+                    <span class="hide-on-small-and-down">Never mind</span>
+                    <i class="material-icons hide-on-med-and-up">not_interested</i>
+                    <i class="material-icons right hide-on-small-and-down">not_interested</i>
+                </button>
                 <button class="teal lighten-1 btn waves-effect waves-light modal-action" type="submit"
-                        name="submit">Submit
+                        name="submit">Send
                     <i class="material-icons right">send</i>
                 </button>
             </div>

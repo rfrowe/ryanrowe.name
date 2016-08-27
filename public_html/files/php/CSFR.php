@@ -37,14 +37,15 @@ function csrfguard_generate_token($unique_form_name) {
 }
 function csrfguard_validate_token($unique_form_name,$token_value) {
 	$token=get_from_session($unique_form_name);
+	echo "\n token : " . $token;
 	if ($token === $token_value) {
 		$result=true;
+		unset_session($unique_form_name);
 	}
 	else
 	{
 		$result=false;
 	}
-	unset_session($unique_form_name);
 	return $result;
 }
 ?>

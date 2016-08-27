@@ -5,12 +5,15 @@
     <link href="/css/materialize.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/files/js/jquery-2.2.4.min.js">\x3C/script>')</script>
     <script src="/files/js/materialize.min.js"></script>
     <script src="/files/js/analytics.js"></script>
     <script src="/files/js/topNav.js"></script>
     <script src="/files/js/jquery.form.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php'); ?>
 
     <script>
         var target = window; // this can be any scrollable element
@@ -88,8 +91,7 @@
         });
     </script>
 
-
-    <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
+    <?php session_start(); readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
 
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
