@@ -15,6 +15,69 @@
   #main-image {
     top: $navbar-height-mobile;
   }
+
+  $resume-shrink-factor: 0.5;
+
+}
+
+#resume {
+  @media #{$medium-and-down} {
+    margin: 1em;
+
+    #contact {
+      display: none !important;
+    }
+    #gradient {
+      margin-left: 0;
+    }
+
+    h1 {
+      font-size: $h1-fontsize * 0.75;
+    }
+    h2 {
+      font-size: $h2-fontsize * 0.75;
+    }
+    h3 {
+      font-size: $h3-fontsize * 0.75;
+    }
+    h4 {
+      font-size: $h4-fontsize * 0.75;
+    }
+    h5 {
+      font-size: $h5-fontsize * 0.75;
+    }
+    h6 {
+      font-size: $h6-fontsize * 0.75;
+    }
+  }
+  @media #{$small-and-down}, only print {
+    h1 {
+      font-size: $h1-fontsize * 0.5;
+    }
+    h2 {
+      font-size: $h2-fontsize * 0.5;
+    }
+    h3 {
+      font-size: $h3-fontsize * 0.5;
+    }
+    h4 {
+      font-size: $h4-fontsize * 0.5;
+      font-weight: 500;
+    }
+    h5 {
+      font-size: $h5-fontsize * 0.5;
+      font-weight: 500;
+    }
+    h6 {
+      font-size: $h6-fontsize * 0.5;
+    }
+  }
+
+  @media only print {
+    h2 {
+      font-size: $h2-fontsize * 0.35;
+    }
+  }
 }
 
 #main-image img, #slideshow-spacer img {

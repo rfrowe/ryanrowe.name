@@ -1,6 +1,10 @@
-section.main {
-	width: 65%;
-} #resume #contact {
+#download-bar {
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+#resume #contact {
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-right: 1em;
@@ -10,6 +14,7 @@ section.main {
 	margin-bottom: 0.2em;
 	font-size: 4em;
 } #resume #contact h2 {
+	margin-top: 0;
 	font-size: 3em;
 	line-height: 1em;
 	color: #212121;
@@ -29,15 +34,27 @@ section.main {
 } #resume #info h2 {
 	text-transform: uppercase;
 	color: #448AFF;
+	margin-bottom: 0;
+} #resume #info h2:first-of-type {
+	margin-top: 0;
 } #resume #info h4 {
+	margin: 0;
+} #resume #info h5 {
 	margin-bottom: 1em;
+	margin-top: 0;
 } #resume #info p, #resume #info ul {
 	text-indent: 0;
 	color: #212121;
 	margin-bottom: 0;
 	margin-top: 0;
 } #resume #info ul {
+	/* font-size: 75%; */
 	margin-top: 0;
+	padding-left: 2rem;
+	padding-top: 0 !important;
+} #resume #info li {
+	list-style-type: disc;
+	/* line-height: 1.25em; */
 }
 #resume #gradient {
 	display: table-cell;
@@ -54,72 +71,49 @@ section.main {
 }
 #resume {
 	display: table;
-	margin-top: 2em;
+	margin: 1em;
 }
-#download-bar {
-	margin-bottom: 2em;
-	margin-top: 2em;
-	overflow: hidden;
-    background-color: #FFF;
-}
-#download-bar h3 {
+
+#skills {
 	padding-top: 1em;
-    padding-bottom: 1em;
-	color: #CFD8DC;
 }
-#download-bar a {
-	text-decoration: none;
-	display: block;
-	background-color: #21447D;
-	text-align: center;
+
+/* fix for footer and download grey area */
+footer.page-footer {
+	margin-top: 0;
 }
-#download-bar h3:hover {
-	text-shadow: 0.25em 0.25em 0em #448AFF;
-}
-@media only screen and (max-width: 641px){
-	#resume #contact {
-		display: none;
-	}
-	#resume #gradient {
-		margin-left: 0;
-	}
+#download-grey-area {
+	padding-bottom: 20px;
 }
 
 @media only print {
-	#download-bar {
+	header, footer, #download-bar, .divider, .drag-target {
 		display: none;
 	}
-	header {
-		display: none;
+	main {
+		padding-left: 0;
 	}
-	article.content {
-		top: 0;
-    	padding: 0;
+	#resume #info h2 {
+		margin-top: 0;
 	}
-	.content section.main {
-		min-width: 100%;
-		margin: 0;
+	#resume p {
+		font-size: 75%;
+		line-height: 1.25em;
+	}
+	#resume #info h5 {
+		margin-bottom: 0.5em;
 	}
 	#resume {
+		margin: 0;
+	}
+	#resume #info li {
+		line-height: 1.25em;
+	}
+	#resume #info ul {
 		font-size: 75%;
-    	margin: 0;
 	}
-	#info p, #info li, #info h3, #info h4 {
-    	line-height: 1em;
-	}
-	#contact p, #info h4 {
-    	color: #3D3D3D;
-	}
-	footer {
-		display: none;
-	}
-	body {
-		background-color: #FFF;
-	}
-	.content p a, .content ol a, .icon {
-		background: none;
-	}
-	.dropshadow {
-    	box-shadow: none;
+	#resume #info {
+		position: relative;
+		top: -2em;
 	}
 }
