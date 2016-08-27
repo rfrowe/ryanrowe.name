@@ -5,8 +5,8 @@
             We had a problem sending your message. Would you like to try again?
         </div>
         <div class="modal-footer">
-            <a id="nope" class="modal-action modal-close left btn-flat">Nope</a>
-            <a id="sure" class="modal-close teal lighten-1 modal-action btn">Sure</a>
+            <a id="nope" class="modal-action modal-close left btn-flat btn waves-effect waves-red">Nope</a>
+            <a id="sure" class="modal-close teal lighten-1 modal-action btn btn waves-effect waves-light">Sure</a>
         </div>
     </div>
 

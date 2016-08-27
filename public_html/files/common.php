@@ -72,7 +72,7 @@
                     Materialize.toast("Message sent!", 4000);
                 },
                 error: function() {
-                    $("body").toggleClass("no-scroll");
+                    $("#contact-error").openModal();
                 }
             });
 

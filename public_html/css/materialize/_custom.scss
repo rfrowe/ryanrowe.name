@@ -46,3 +46,15 @@
   0% { transform: translateY(0.1em); }
   100% { transform: translateY(-0.2em); }
 }
+
+
+#contact-error {
+  @extend .modal;
+
+  @media #{$large-and-up} {
+    width: 33%;
+  }
+  @media #{$medium-only} {
+    width: 50%;
+  }
+}
