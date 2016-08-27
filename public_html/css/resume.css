@@ -79,11 +79,12 @@
 }
 
 /* fix for footer and download grey area */
-footer.page-footer {
-	margin-top: 0;
+main {
+	padding-bottom: 0;
 }
 #download-grey-area {
 	padding-bottom: 20px;
+	height: 100%;
 }
 
 @media only print {
