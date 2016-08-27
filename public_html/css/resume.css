@@ -4,26 +4,26 @@
 	font-size: 2rem;
 	line-height: 2rem;
 }
-#resume #contact {
+#contact-details {
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-right: 1em;
-	display: table-cell;
-} #resume #contact h1 {
+	display: none;
+} #resume #contact-details h1 {
 	margin-top: 0;
 	margin-bottom: 0.2em;
 	font-size: 4em;
-} #resume #contact h2 {
+} #resume #contact-details h2 {
 	margin-top: 0;
 	font-size: 3em;
 	line-height: 1em;
 	color: #212121;
-} #resume #contact p {
+} #resume #contact-details p {
 	text-indent: 0;
-} #resume #contact p span {
+} #resume #contact-details p span {
 	color: #21447D;
 	font-weight: bold;
-} #resume #contact a {
+} #resume #contact-details a {
 	color: inherit;
 }
 #resume #info {
@@ -71,7 +71,7 @@
 }
 #resume {
 	display: table;
-	margin: 1em;
+	margin: 2em 3em 2em 1em;
 }
 
 #skills {
@@ -80,7 +80,7 @@
 
 /* fix for footer and download grey area */
 main {
-	padding-bottom: 0;
+	padding-bottom: 0 !important;
 }
 #download-grey-area {
 	padding-bottom: 20px;
@@ -116,5 +116,8 @@ main {
 	#resume #info {
 		position: relative;
 		top: -2em;
+	}
+	#contact-details {
+		display: table-cell;
 	}
 }

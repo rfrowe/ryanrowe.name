@@ -7,17 +7,15 @@
 
     <title>Résumé</title>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
     <link href="/css/resume.css" rel="stylesheet" type="text/css">
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 </head>
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
 <main>
-
-
     <div id="resume" class="text dropshadow">
-        <section id="contact">
+        <section id="contact-details">
             <h1>Ryan</h1>
             <h2>Rowe</h2>
             <p>Location<br>
@@ -25,10 +23,10 @@
             <p>Website<br>
                 <span><a href="/">ryanrowe.name</a></span></p>
             <p>Contact<br>
-                        <span><a href="tel:4405704611">(440) 570-4611</a><br>
-                        <br>
-                        <a href="mailto:rfrowe@cs.uw.edu">rfrowe@cs.uw.edu</a><br>
-                        <a href="mailto:rfrowe@uw.edu">ryanf.rowe@gmail.com</a></span></p>
+            <span><a href="tel:4405704611">(440) 570-4611</a><br>
+            <br>
+            <a href="mailto:rfrowe@cs.uw.edu">rfrowe@cs.uw.edu</a><br>
+            <a href="mailto:rfrowe@uw.edu">ryanf.rowe@gmail.com</a></span></p>
         </section>
         <div id="gradient"></div>
         <section id="info">
@@ -117,7 +115,7 @@
         </section>
     </div> <!-- end #resume -->
 
-    <div id="download-grey-area" class="grey lighten-3">
+    <div id="download-grey-area" class="grey">
         <div class="divider"></div>
         <div class="container center" id="download-bar">
             <a href="/files/Resume.pdf" download="Ryan Rowe's Resume" class="center card-panel hoverable waves-effect">

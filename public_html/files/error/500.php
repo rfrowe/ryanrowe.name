@@ -9,9 +9,9 @@
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-<main class="valign-wrapper">
+<main class="valign-wrapper grey">
     <div class="container">
-        <div class="card grey lighten-3">
+        <div class="card">
             <div class="card-content">
                 <h1>500! Server Error</h1>
                 <div class="flow-text">

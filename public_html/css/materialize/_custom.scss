@@ -21,6 +21,9 @@
 }
 
 #resume {
+  @media #{$large-and-up} {
+    width: 75%
+  }
   @media #{$medium-and-down} {
     margin: 1em;
 
