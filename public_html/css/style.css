@@ -97,6 +97,23 @@ header {
     user-select: none;
 }
 
+#work .row {
+    margin-bottom: 1rem;
+}
+
+#work a {
+    margin: 1rem 1rem 0 0;
+}
+
+#work .collapsible-body ul {
+    margin: 0 2rem 2rem 2rem;
+    padding-left: 4rem;
+}
+
+#work .collapsible-body li {
+    list-style-type: disc;
+}
+
 header, main, footer {
     padding-left: 300px;
 }
