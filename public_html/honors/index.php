@@ -1,15 +1,14 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Ryan Rowe &mdash; Honors Portfolio</title>
+    <title>Honors Portfolio</title>
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
     <link href="/css/honors.css" rel="stylesheet" type="text/css">
 
     <script>
-        var postId = 4;
+        /*var postId = 4;
         var loading = false;
         var load = true;
 
@@ -97,13 +96,32 @@
                     $(course).siblings(".toggleable").css("background-color", "#F5F5F5");
                 }
             }
-        }
+        }*/
     </script>
 </head>
 
 <body>
+<?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
+<main>
     <div class="container">
-        <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
+        <div class="card">
+            <div class="tabs">
+                <div class="tab"><a href="">All</a></div>
+                <div class="tab"><a href="#freshman">Freshman</a></div>
+                <div class="tab"><a href="#sophomore">Sophomore</a></div>
+                <div class="tab"><a href="#junior">Junior</a></div>
+                <div class="tab"><a href="#senior">Senior</a></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/footer.php") ?>
+</body>
+</html>
+
+<!--
+    <div class="container">
             <article class="content offset">
                 <section class="main">
                     <h1>UW Honors Portfolio</h1>
@@ -130,9 +148,9 @@
                     <div id="endless-scroll"></div>
                 </section>
             </article>
-            <!-- end .content -->
+            <!-- end .content
     </div>
-    <!-- end .container -->
+    <!-- end .container
 </body>
 
 </html>

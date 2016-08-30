@@ -35,10 +35,10 @@
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-<main class="grey">
+<main class="grey lighten-2">
     <div class="container">
-        <h1>Previous Work</h1>
-        <ul class="collapsible" id="work" data-collapsible="accordion">
+        <h1 class="grey-text text-darken-2">Previous Work</h1>
+        <ul class="collapsible popout" id="work" data-collapsible="accordion">
             <li>
                 <div class="collapsible-header">
                     <div class="row">
@@ -73,6 +73,7 @@
                 </div>
                 <div class="collapsible-body grey lighten-5">
                     <p class="flow-text">
+                        <!-- TODO: Make this image lightboxable -->
                         <img src="/images/oscsi.jpg" alt="Picture processing of Sun's corona" id="oscsi">
                         I was one of 16 students selected to attend SI, a two­week residential program that gives
                         gifted Ohio high school students entering their sophomore, junior or senior year project-based,
@@ -96,6 +97,7 @@
                 </div>
                 <div class="collapsible-body grey lighten-5">
                     <p class="flow-text">
+                        <!-- TODO: Make this image lightboxable -->
                         <img class="responsive-img" src="/images/omdyac.jpg" alt="Screenshot of the website">
                         As webmaster, was charged with maintaining website to provide information to an estimated 300
                         people in OH, PA, and WV for church youth group. During course of work utilized Adobe

@@ -9,7 +9,7 @@
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-<main class="valign-wrapper grey">
+<main class="valign-wrapper grey lighten-2">
     <div class="container">
         <div class="card">
             <div class="card-content">
