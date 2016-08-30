@@ -44,7 +44,7 @@
                     <div class="row">
                         <h5 class="col s9">Practice-It, University of Washington CSE</h5>
                         <a href="http://practiceit.cs.washington.edu" class="btn right blue col s2">
-                            <span class="hide-on-med-and-down">Visit</span><!--<i class="material-icons">open_in_new</i>-->
+                            <span class="hide-on-med-and-down">Visit</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Seattle, Washington — 2016 to Present</h6>
                     </div>
@@ -66,15 +66,16 @@
                     <div class="row">
                         <h5 class="col s9">Ohio Supercomputing Center Summer Institute</h5>
                         <a href="/work/OSCSI/" class="btn right blue col s2">
-                            <span class="hide-on-med-and-down">Watch</span><!--<i class="material-icons">open_in_new</i>-->
+                            <span class="hide-on-med-and-down">Watch</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Columbus, Ohio — 2012</h6>
                     </div>
                 </div>
                 <div class="collapsible-body grey lighten-5">
                     <p class="flow-text">
-                        <!-- TODO: Make this image lightboxable -->
-                        <img src="/images/oscsi.jpg" alt="Picture processing of Sun's corona" id="oscsi">
+                        <img src="/images/oscsi.jpg" class="materialboxed" alt="Picture processing of Sun&apos;s corona" id="oscsi"
+                             data-caption="The stages of identifying and mapping asteroids in NASA satellite photos
+                             of the Sun&apos;s corona">
                         I was one of 16 students selected to attend SI, a two­week residential program that gives
                         gifted Ohio high school students entering their sophomore, junior or senior year project-based,
                         hands­on learning. Working in small peer teams, we used supercomputers for practical
@@ -90,15 +91,14 @@
                     <div class="row">
                         <h5 class="col s9">Webmaster, Unitarian Universalist Ohio-Meadville District</h5>
                         <a href="/work/omdyac/" class="btn right blue col s2">
-                            <span class="hide-on-med-and-down">Visit</span><!--<i class="material-icons">open_in_new</i>-->
+                            <span class="hide-on-med-and-down">Visit</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Westlake, Ohio — 2011 to 2014</h6>
                     </div>
                 </div>
                 <div class="collapsible-body grey lighten-5">
                     <p class="flow-text">
-                        <!-- TODO: Make this image lightboxable -->
-                        <img class="responsive-img" src="/images/omdyac.jpg" alt="Screenshot of the website">
+                        <img class="responsive-img materialboxed" src="/images/omdyac.jpg" alt="Screenshot of the website">
                         As webmaster, was charged with maintaining website to provide information to an estimated 300
                         people in OH, PA, and WV for church youth group. During course of work utilized Adobe
                         Dreamweaver to manage project and publish code.</p>
@@ -115,7 +115,7 @@
                     <div class="row">
                         <h5 class="col s9">Work Title</h5>
                         <a href="#" class="btn right blue col s2">
-                            <span class="hide-on-med-and-down">Visit</span><i class="material-icons">open_in_new</i>
+                            <span class="hide-on-med-and-down">Visit</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Location — Years</h6>
                     </div>

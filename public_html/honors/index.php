@@ -105,14 +105,13 @@
 <main>
     <div class="container">
         <div class="card">
-            <div class="tabs">
-                <div class="tab"><a href="">All</a></div>
-                <div class="tab"><a href="#freshman">Freshman</a></div>
-                <div class="tab"><a href="#sophomore">Sophomore</a></div>
-                <div class="tab"><a href="#junior">Junior</a></div>
-                <div class="tab"><a href="#senior">Senior</a></div>
-                <div class="indicator"></div>
-            </div>
+            <ul class="tabs">
+                <li class="tab"><a class="active" href="">All</a></li>
+                <li class="tab"><a href="#freshman">Freshman</a></li>
+                <li class="tab"><a href="#sophomore">Sophomore</a></li>
+                <li class="tab"><a href="#junior">Junior</a></li>
+                <li class="tab"><a href="#senior">Senior</a></li>
+            </ul>
         </div>
     </div>
 </main>

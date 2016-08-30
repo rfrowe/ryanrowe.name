@@ -124,3 +124,22 @@
     width: 50%;
   }
 }
+
+#work .collapsible-header a i {
+  line-height: $button-height;
+  margin-right: 0;
+  @media #{$medium-and-down} {
+    margin-left: 0;
+  }
+}
+
+#work .collapsible-header a {
+  @media #{$medium-and-down} {
+    width: auto;
+  }
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
