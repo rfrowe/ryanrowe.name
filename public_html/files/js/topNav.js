@@ -16,7 +16,7 @@
         $('body').append(dragTarget);
 
         menu_id.css('transform', 'translateX(0) translateY(-105%)');
-        dragTarget.css({'left': 0, 'right': 0, 'width': "75%", 'height': 48, 'z-index': 999}); // Add Touch Area
+        dragTarget.css({'left': 0, 'right': 0, 'width': "75%", 'height': 10, 'z-index': 999}); // Add Touch Area
 
         // If fixed sidenav, bring menu out
         if (menu_id.hasClass('fixed')) {
@@ -64,7 +64,7 @@
             } });
 
           // Reset phantom div
-          dragTarget.css({height: '48', width: '75%', top: 0});
+          dragTarget.css({height: '10', width: '75%', top: 0});
           menu_id.velocity(
             {'translateX': '0', 'translateY': '-105%'},
             { duration: 200,
@@ -184,7 +184,7 @@
                 complete: function () {
                   $(this).remove();
                 }});
-              dragTarget.css({height: '48px', 'width': '75%', 'z-index': 999, 'top': ''});
+              dragTarget.css({height: '10px', 'width': '75%', 'z-index': 999, 'top': ''});
             }
           }
         });
