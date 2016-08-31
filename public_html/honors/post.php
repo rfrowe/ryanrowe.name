@@ -30,6 +30,7 @@ try {
         $description = $results[0]["meta"];
         $style = $results[0]["style"];
         $title = $results[0]["title"];
+        $js = $results[0]["js"];
     }
 } catch(PDOException $e) {
     http_response_code(404);
@@ -51,12 +52,15 @@ try {
     <style>
         <?= $style ?>
     </style>
+    <script>
+        <?= $js ?>
+    </script>
 </head>
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
 <main class="container">
-    <h1><?= $title; ?></h1>
+    <h2><?= $title; ?></h2>
     <div class="text">
         <?= $text; ?>
     </div>

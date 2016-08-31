@@ -10,8 +10,8 @@
 
 
 PImage[] pix = new PImage[6];
-float rotx = 0; 
-float roty = 0; 
+float rotx = 0;
+float roty = 0;
 static final int WIDTH = 100;
 int level;
 int r, b, g;
@@ -19,9 +19,9 @@ int pTouchX = 0;
 int pTouchY = 0;
 int wid = screen.width;
 int hig = screen.height;
-float rate = 0.01; 
+float rate = 0.01;
 
-void setup() { 
+void setup() {
   level = 1;
   setComplexity(level);
   if(wid < 768 && hig < 768) {
@@ -35,7 +35,7 @@ void setup() {
   r = parseInt(rgb.substring(rgb.indexOf("(") + 1, rgb.indexOf(",")));
   g = parseInt(rgb.substring(rgb.indexOf(",") + 1, rgb.indexOf(",",rgb.indexOf(",") + 1)));
   b = parseInt(rgb.substring(rgb.indexOf(",",rgb.indexOf(",") + 1) + 1 ,rgb.indexOf(")")));
-} 
+}
 
 void setComplexity(int complexity) {
   level = complexity;
@@ -49,82 +49,81 @@ int getComplexity() {
 	return level;
 }
 
-void draw() { 
-  background(r, g, b); 
-  noStroke(); 
-  translate(width/2.0, height/2.0, -100); 
-  rotateX(rotx); 
-  rotateY(roty); 
+void draw() {
+  background(r, g, b);
+  noStroke();
+  translate(width/2.0, height/2.0, -100);
+  rotateX(rotx);
+  rotateY(roty);
   if(wid < 768 && hig < 768) {
-  	scale(160 - (768 - Math.min(wid, hig)) * 0.19531); 
+  	scale(160 - (768 - Math.min(wid, hig)) * 0.19531);
   } else {
-  	scale(160); 
+  	scale(160);
   }
-  TexturedCube(pix); 
+  TexturedCube(pix);
   fill(255,255,255);
-} 
+}
 
-void TexturedCube(PImage[] pix) { 
-  beginShape(QUADS); 
-  texture(pix[0]); 
-  // +Z "front" face 
-  vertex(-1, -1, 1, 0, 0); 
-  vertex(1, -1, 1, 1, 0); 
-  vertex(1, 1, 1, 1, 1); 
-  vertex(-1, 1, 1, 0, 1); 
+void TexturedCube(PImage[] pix) {
+  beginShape(QUADS);
+  texture(pix[0]);
+  // +Z "front" face
+  vertex(-1, -1, 1, 0, 0);
+  vertex(1, -1, 1, 1, 0);
+  vertex(1, 1, 1, 1, 1);
+  vertex(-1, 1, 1, 0, 1);
   endShape();
-  
-  beginShape(QUADS); 
-  texture(pix[1]); 
-  // -Z "back" face 
-  vertex(-1, -1, -1, 0, 0); 
-  vertex(1, -1, -1, 1, 0); 
-  vertex(1, 1, -1, 1, 1); 
-  vertex(-1, 1, -1, 0, 1); 
-  endShape();
-  
-  beginShape(QUADS); 
-  texture(pix[2]); 
-  // +Y "bottom" face 
-  vertex(-1, 1, 1, 0, 0); 
-  vertex(-1, 1, -1, 1, 0); 
-  vertex(1, 1, -1, 1, 1); 
-  vertex(1, 1, 1, 0, 1); 
-  endShape();
-  
-  beginShape(QUADS); 
-  texture(pix[3]); 
-  // -Y "top" face 
-  vertex(-1, -1, 1, 0, 0); 
-  vertex(-1, -1, -1, 1, 0); 
-  vertex(1, -1, -1, 1, 1); 
-  vertex(1, -1, 1, 0, 1); 
-  endShape();
-  
-  beginShape(QUADS); 
-  texture(pix[4]); 
-  // +X "right" face 
-  vertex(1, -1, 1, 0, 0); 
-  vertex(1, -1, -1, 1, 0); 
-  vertex(1, 1, -1, 1, 1); 
-  vertex(1, 1, 1, 0, 1); 
-  endShape();
-  
-  beginShape(QUADS); 
-  texture(pix[5]); 
-  // -X "left" face 
-  vertex(-1, -1, 1, 0, 0); 
-  vertex(-1, -1, -1, 1, 0); 
-  vertex(-1, 1, -1, 1, 1); 
-  vertex(-1, 1, 1,0, 1); 
-  endShape();
-} 
 
-void mouseDragged() { 
-  
-  rotx += (pmouseY-mouseY) * rate; 
-  roty += (mouseX-pmouseX) * rate; 
-} 
+  beginShape(QUADS);
+  texture(pix[1]);
+  // -Z "back" face
+  vertex(-1, -1, -1, 0, 0);
+  vertex(1, -1, -1, 1, 0);
+  vertex(1, 1, -1, 1, 1);
+  vertex(-1, 1, -1, 0, 1);
+  endShape();
+
+  beginShape(QUADS);
+  texture(pix[2]);
+  // +Y "bottom" face
+  vertex(-1, 1, 1, 0, 0);
+  vertex(-1, 1, -1, 1, 0);
+  vertex(1, 1, -1, 1, 1);
+  vertex(1, 1, 1, 0, 1);
+  endShape();
+
+  beginShape(QUADS);
+  texture(pix[3]);
+  // -Y "top" face
+  vertex(-1, -1, 1, 0, 0);
+  vertex(-1, -1, -1, 1, 0);
+  vertex(1, -1, -1, 1, 1);
+  vertex(1, -1, 1, 0, 1);
+  endShape();
+
+  beginShape(QUADS);
+  texture(pix[4]);
+  // +X "right" face
+  vertex(1, -1, 1, 0, 0);
+  vertex(1, -1, -1, 1, 0);
+  vertex(1, 1, -1, 1, 1);
+  vertex(1, 1, 1, 0, 1);
+  endShape();
+
+  beginShape(QUADS);
+  texture(pix[5]);
+  // -X "left" face
+  vertex(-1, -1, 1, 0, 0);
+  vertex(-1, -1, -1, 1, 0);
+  vertex(-1, 1, -1, 1, 1);
+  vertex(-1, 1, 1,0, 1);
+  endShape();
+}
+
+void mouseDragged() {
+  rotx += (pmouseY-mouseY) * rate;
+  roty += (mouseX-pmouseX) * rate;
+}
 
 /*void touchMove(t) {
   int touchX = t.touches[0].offsetX;

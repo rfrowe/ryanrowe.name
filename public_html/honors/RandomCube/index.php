@@ -76,18 +76,20 @@
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-<main>
+<main class="container">
 	<article class="content offset">
     <section class="main">
-    	<h1>Random Cube, CSE 390 HA</h1>
+    	<h1>Random Cube</h1>
+		<h4>CSE 390</h4>
     	<section>
         	<h3 style="float:left; margin-right:1em;">Change complexity: </h3>
-            <input type="button" class="dropshadow" onClick="setComplexity(-1);" value="▼" />
-            <input type="button" class="dropshadow" onClick="setComplexity(1);" value="▲" />
+			<p class="range-field">
+			<input type="range" id="complexity" min="1" max="9" value="1"/>
+			</p>
             <h3 id="label">Complexity: 1</h3>
             <p style="padding-top: 1em;"><b>Drag the cube around with your mouse!</b></p>
             <p>For the purpose of this website, the cubes have been pre-generated.</p>
-            <canvas data-processing-sources="RandomCube.pde" class="dropshadow" id="rand-cube"></canvas>
+            <canvas data-processing-sources="RandomCube.pde" class="card grey lighten-3" id="rand-cube"></canvas>
         </section>
         <section class="code-block dropshadow">
         <?php echo str_replace("\t","&nbsp;&nbsp;",nl2br(htmlspecialchars(file_get_contents("./Original.pde")))); ?>

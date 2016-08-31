@@ -36,8 +36,7 @@
                     success: appendCourses,
                     error: function(jqXHR) {
                         if(jqXHR.status == 404) {
-                            Materialize.toast($('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'), 4000);
-                            done = true;
+                            noMore();
                         } else {
                             Materialize.toast($('<span class="valign-wrapper"><i class="material-icons red-text left">error_outline</i>Error loading posts</span>'), 4000);
                         }
@@ -45,6 +44,11 @@
                         $("#loading").slideUp();
                     }
                 });
+            }
+
+            function noMore() {
+                Materialize.toast($('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'), 4000);
+                done = true;
             }
 
             String.prototype.capitalize = function() {
@@ -111,6 +115,10 @@
                     maxId = Math.max(maxId, post.id);
                 }
 
+                if (json.length < 4) {
+                    noMore();
+                }
+
                 // Redinit collapsible
                 $('.collapsible').collapsible();
                 $('.materialboxed').materialbox();
@@ -138,6 +146,8 @@
                 var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
                 return isVisible;
             }
+
+            // We need the University links to trigger a page reload here
         });
     </script>
 </head>
@@ -146,21 +156,19 @@
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
 <main>
     <div class="container">
-        <div class="card">
-            <ul class="tabs grey lighten-2" id="year-tabs">
-                <li class="tab"><a class="active" href="">All</a></li>
-                <li class="tab"><a href="#freshman">Fresh<span class="hide-on-small-and-down">man</span></a></li>
-                <li class="tab"><a href="#sophomore">Soph<span class="hide-on-small-and-down">omore</span></a></li>
-                <li class="tab"><a href="#junior">Junior</a></li>
-                <li class="tab"><a href="#senior">Senior</a></li>
-            </ul>
-        </div>
+        <ul class="tabs" id="year-tabs">
+            <li class="tab"><a class="active" href="">All</a></li>
+            <li class="tab"><a href="#freshman">Fresh<span class="hide-on-small-and-down">man</span></a></li>
+            <li class="tab"><a href="#sophomore">Soph<span class="hide-on-small-and-down">omore</span></a></li>
+            <li class="tab"><a href="#junior">Junior</a></li>
+            <li class="tab"><a href="#senior">Senior</a></li>
+        </ul>
         <ul class="collapsible" id="courses" data-collapsible="accordion">
             <li class="template">
                 <div class="collapsible-header teal lighten-1 white-text">
                     <div class="row">
                         <h5 class="col s9"></h5>
-                        <a class="btn right blue col s2">
+                        <a class="btn right blue-text col s2">
                             <span class="hide-on-med-and-down"></span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12"></h6>
@@ -171,7 +179,7 @@
                         <li class="subpost container">
                             <div class="valign-wrapper row subtitle">
                                 <h5 class="col s9"></h5>
-                                <a class="btn right blue col s2">
+                                <a class="btn right blue-text col s2">
                                     <span class="hide-on-med-and-down"></span><i class="material-icons
                                     right">open_in_new</i>
                                 </a>

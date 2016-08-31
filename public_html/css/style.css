@@ -162,6 +162,14 @@ header {
 #year-tabs li.tab {
     min-width: unset;
 }
+#year-tabs {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#rand-cube {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header, main, footer {
     padding-left: 300px;

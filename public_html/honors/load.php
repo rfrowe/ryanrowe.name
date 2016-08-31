@@ -24,7 +24,7 @@ try {
     if (isset($_POST["id"])) {
         $statement .= " c.id > :id AND";
     }
-    $statement .= " EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) ORDER BY c.year, c.quarter LIMIT 5";
+    $statement .= " EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) ORDER BY c.year, c.quarter LIMIT 4";
 
     $query = $conn->prepare($statement);
     if (isset($_POST["year"])) {
