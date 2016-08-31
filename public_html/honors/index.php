@@ -9,19 +9,43 @@
 
     <script>
         $(function() {
-            first = true;
-            $.ajax({
-                type: "POST",
-                url: "./load.php",
-                data: { year: window.location.hash.substring(1) },
-                // serializes the form's elements.
-                dataType: "json",
-                success: appendCourses,
-                error: function (jqXHR) {
-                    load = false;
-                    $("#courses").append(jqXHR.responseText);
+            var first = true;
+            var loading = false;
+            var maxId = -1;
+            var done = false;
+
+            load(window.location.hash.substring(1), maxId);
+
+            function load(year, id) {
+                loading = true;
+                $("#loading").slideDown();
+
+                var data = {};
+                if (year !== "") {
+                    data.year = year
                 }
-            });
+                if (id > -1) {
+                    data.id = id;
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "./load.php",
+                    data: data,
+                    // serializes the form's elements.
+                    dataType: "json",
+                    success: appendCourses,
+                    error: function(jqXHR) {
+                        if(jqXHR.status == 404) {
+                            Materialize.toast($('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'), 4000);
+                            done = true;
+                        } else {
+                            Materialize.toast($('<span class="valign-wrapper"><i class="material-icons red-text left">error_outline</i>Error loading posts</span>'), 4000);
+                        }
+                        loading = false;
+                        $("#loading").slideUp();
+                    }
+                });
+            }
 
             String.prototype.capitalize = function() {
                 return this.charAt(0).toUpperCase() + this.slice(1);
@@ -84,102 +108,37 @@
 
                     $newCourse.removeClass("template");
                     $("#courses").append($newCourse);
+                    maxId = Math.max(maxId, post.id);
                 }
 
                 // Redinit collapsible
                 $('.collapsible').collapsible();
                 $('.materialboxed').materialbox();
+                loading = false;
+                $("#loading").slideUp();
             }
-        });
-        /*var postId = 4;
-        var loading = false;
-        var load = true;
 
-        $(window).scroll(function () {
-            if (load = true) {
+            $(window).scroll(function () {
                 checkEndlessScroll("endless-scroll");
-            }
-        });
-
-        function checkEndlessScroll(el) {
-            if (isInView(document.getElementById(el))) {
-                //$("#all").click();
-                if(!loading) {
-                    loading = true;
-                    getPosts();
-                }
-            }
-        }
-
-        function getPosts() {
-            $.ajax({
-                type: "POST",
-                url: "./load.php",
-                data: {id: postId},
-                // serializes the form's elements.
-                dataType: "html",
-                success: function (data) {
-                    $("#courses").append(data);
-                    stagger($(".toggle"));
-                    postId += 3;
-                    loading = false;
-                },
-                error: function (jqXHR) {
-                    load = false;
-                    $("#courses").append(jqXHR.responseText);
-                }
             });
-        }
 
-        function isInView(el) {
-            var elemTop = el.getBoundingClientRect().top;
-            var elemBottom = el.getBoundingClientRect().bottom;
-
-            var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-            return isVisible;
-        }
-
-        $(document).ready(function (e) {
-            stagger($(".toggle"));
-
-            $(".visit").click(function (e) {
-                e.stopPropagation();
-            });
-            $(".filter").click(function (e) {
-                $(this).siblings().removeClass("selected");
-                $(this).addClass("selected");
-
-                if (this.id == 'all') {
-                    $('.course').fadeIn(300);
-                    courses = $('.toggle')
-                } else {
-                    el = $('.' + this.id).fadeIn(300);
-                    if(el.length == 0 && load == true) {
-                        if(!loading) {
-                            loading = true;
-                            getPosts();
-                        }
+            function checkEndlessScroll(el) {
+                if (isInView(document.getElementById(el))) {
+                    if(!loading && !done) {
+                        console.log("loading past id: " + maxId);
+                        load(window.location.hash.substring(1), maxId);
                     }
-                    $('.course').not(el).fadeOut(300);
-                    courses = $('.' + this.id + ' .toggle');
-                }
-
-                stagger(courses);
-            });
-        });
-
-        function stagger(list) {
-            for (i = 0; i < list.length; i++) {
-                course = list[i];
-                if (i % 2 == 0) {
-                    $(course).css("background-color", "#448AFF");
-                    $(course).siblings(".toggleable").css("background-color", "unset");
-                } else {
-                    $(course).css("background-color", "#21447D");
-                    $(course).siblings(".toggleable").css("background-color", "#F5F5F5");
                 }
             }
-        }*/
+
+            function isInView(el) {
+                var elemTop = el.getBoundingClientRect().top;
+                var elemBottom = el.getBoundingClientRect().bottom;
+
+                var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+                return isVisible;
+            }
+        });
     </script>
 </head>
 
@@ -188,10 +147,10 @@
 <main>
     <div class="container">
         <div class="card">
-            <ul class="tabs grey lighten-2">
+            <ul class="tabs grey lighten-2" id="year-tabs">
                 <li class="tab"><a class="active" href="">All</a></li>
-                <li class="tab"><a href="#freshman">Freshman</a></li>
-                <li class="tab"><a href="#sophomore">Sophomore</a></li>
+                <li class="tab"><a href="#freshman">Fresh<span class="hide-on-small-and-down">man</span></a></li>
+                <li class="tab"><a href="#sophomore">Soph<span class="hide-on-small-and-down">omore</span></a></li>
                 <li class="tab"><a href="#junior">Junior</a></li>
                 <li class="tab"><a href="#senior">Senior</a></li>
             </ul>
@@ -223,43 +182,15 @@
             </li>
         </ul>
         <div id="endless-scroll"></div>
+        <div class="grey lighten-2 valign-wrapper card" id="loading">
+            <div class="container">
+                <div class="progress green">
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/footer.php") ?>
 </body>
-</html>
-
-<!--
-    <div class="container">
-            <article class="content offset">
-                <section class="main">
-                    <h1>UW Honors Portfolio</h1>
-                    <section id="filters" class="dropshadow">
-                        <div id="all" class="filter trans selected">
-                            <h3>All</h3>
-                        </div>
-                        <div id="freshman" class="filter trans ">
-                            <h3>Freshman</h3>
-                        </div>
-                        <div id="sophomore" class="filter trans ">
-                            <h3>Sophomore</h3>
-                        </div>
-                        <div id="junior" class="filter trans ">
-                            <h3>Junior</h3>
-                        </div>
-                        <div id="senior" class="filter trans ">
-                            <h3>Senior</h3>
-                        </div>
-                    </section>
-                    <section class="dropshadow" id="courses">
-                        <?php include("./load.php") ?>
-                    </section>
-
-                </section>
-            </article>
-            <!-- end .content
-    </div>
-    <!-- end .container
-</body>
-
 </html>

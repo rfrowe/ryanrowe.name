@@ -14,26 +14,25 @@ if(!isset($_POST["id"])) {
 }
 
 try {
-    switch ($_POST["year"]) {
-        case "senior":
-            $year = "senior";
-            break;
-        case "junior":
-            $year = "junior";
-            break;
-        case "sophomore":
-            $year = "sophomore";
-            break;
-        default:
-            $year = "freshman";
-    }
     $conn = new PDO($dsn, $username, $password, [ PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8' ]);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $statement = "SELECT * FROM courses c WHERE year = ? AND EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) LIMIT 10";
+    $statement = "SELECT * FROM courses c WHERE";
+    if (isset($_POST["year"])) {
+        $statement .= " c.year = :year AND";
+    }
+    if (isset($_POST["id"])) {
+        $statement .= " c.id > :id AND";
+    }
+    $statement .= " EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) ORDER BY c.year, c.quarter LIMIT 5";
 
     $query = $conn->prepare($statement);
-    $query->bindValue(1, $year, PDO::PARAM_STR);
+    if (isset($_POST["year"])) {
+        $query->bindValue(":year", $_POST["year"], PDO::PARAM_STR);
+    }
+    if (isset($_POST["id"])) {
+        $query->bindValue(":id", $_POST["id"], PDO::PARAM_INT);
+    }
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_ASSOC);
 
