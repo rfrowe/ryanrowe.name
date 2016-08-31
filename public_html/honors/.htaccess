@@ -1,5 +1,4 @@
 RewriteEngine On
 
 RewriteCond %{REQUEST_URI} !^/honors/[^/]+.php
-RewriteCond %{REQUEST_URI} !^/honors/RandomCube
 RewriteRule ^(.+)$ /honors/post.php?id=$1 [QSA,NC,L]

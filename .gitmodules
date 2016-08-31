@@ -1,3 +1,6 @@
 [submodule "public_html/work/omdyac"]
 	path = public_html/work/omdyac
 	url = git@github.com:rfrowe/OMDYAC.git
+[submodule "public_html/files/RandomCube"]
+	path = public_html/files/RandomCube
+	url = git@github.com:rfrowe/RandomCube.git

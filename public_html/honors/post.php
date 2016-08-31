@@ -49,6 +49,10 @@ try {
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
 
+    <?php if (strpos($_GET["id"], "RandomCube") !== false) { ?>
+        <script src="/files/js/processing.js"></script>
+    <?php } ?>
+
     <style>
         <?= $style ?>
     </style>
