@@ -14,24 +14,41 @@ if(!isset($_POST["id"])) {
 }
 
 try {
-    $conn = new PDO($dsn, $username, $password);
+    switch ($_POST["year"]) {
+        case "senior":
+            $year = "senior";
+            break;
+        case "junior":
+            $year = "junior";
+            break;
+        case "sophomore":
+            $year = "sophomore";
+            break;
+        default:
+            $year = "freshman";
+    }
+    $conn = new PDO($dsn, $username, $password, [ PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8' ]);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $statement = "SELECT * FROM honors WHERE id >= ? LIMIT 3";
+    $statement = "SELECT * FROM courses c WHERE year = ? AND EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) LIMIT 10";
 
     $query = $conn->prepare($statement);
-    $query->bindValue(1, $_POST['id'], PDO::PARAM_INT);
+    $query->bindValue(1, $year, PDO::PARAM_STR);
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_ASSOC);
 
     // If there were no results, throw an error
     if($query->rowCount() == 0) {
-        header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
-        echo "<h1 style='text-align: center; padding: 1em; margin: 0; color: #FFF; background-color: #3A3A3A;'>No More Posts</h1>";
+        http_response_code(404);
     } else {
-        foreach($results as $row) {
-            echo $row["html"] . "\n";
+        foreach($results as &$row) {
+            //echo $row["html"] . "\n";
+            $query = $conn->prepare("SELECT * FROM posts WHERE course_id = ?");
+            $query-> bindValue(1, $row["id"], PDO::PARAM_INT);
+            $query->execute();
+            $row["posts"] = $query->fetchAll(PDO::FETCH_ASSOC);
         }
+        echo(json_encode($results));
     }
 } catch(PDOException $e) {
     if($php) {

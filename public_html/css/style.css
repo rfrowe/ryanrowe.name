@@ -101,7 +101,8 @@ header {
     margin-bottom: 1rem;
 }
 
-#work a {
+#work a,
+#courses .collapsible-header a {
     margin: 0.75rem 0.75rem 0 0;
 }
 
@@ -112,6 +113,43 @@ header {
 
 #work .collapsible-body li {
     list-style-type: disc;
+}
+
+#cube {
+    width: 30%;
+    float: left;
+    margin-right: 1em;
+}
+#oscsi {
+    width: 50%;
+    float: left;
+    margin-right: 1em;
+}
+#work, #courses {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.subtitle {
+    border-bottom: 1px solid #ccc;
+}
+.subtitle h5 {
+    margin-left: 0 !important;
+}
+.collapsible-body .subpost p {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.template {
+    display: none;
+}
+#courses .row {
+    margin-bottom: 0;
+}
+#courses .collapsible-body p:first-of-type {
+    margin-top: 1rem;
 }
 
 header, main, footer {

@@ -75,9 +75,9 @@
 </head>
 
 <body>
-<div class="container">
-  <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-  <article class="content offset">
+<?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
+<main>
+	<article class="content offset">
     <section class="main">
     	<h1>Random Cube, CSE 390 HA</h1>
     	<section>
@@ -94,7 +94,7 @@
         </section>
     </section>
   </article> <!-- end .content -->
-  <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/footer.php") ?>
-</div> <!-- end .container -->
+</main>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/files/footer.php") ?>
 </body>
 </html>

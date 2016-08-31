@@ -6,31 +6,6 @@
     <title>Work</title>
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
-    <link href="/css/work.css" rel="stylesheet" type="text/css">
-
-    <script>
-	$(document).ready(function(e) {
-		/*$(".visit").click(function(e) {
-            e.stopPropagation();
-        });
-        $('.toggle').click(function(){
-			if($(this).children(".dropdown").css("transform") != "none") {
-				$(this).children(".dropdown").css({'-webkit-transform' : 'none',
-						 '-moz-transform' : 'none',
-						 '-ms-transform' : 'none',
-						 'transform' : 'none'});
-				$(this).removeClass("open");
-			} else {
-				$(this).children(".dropdown").css({'-webkit-transform' : 'rotate('+ 90 +'deg)',
-						 '-moz-transform' : 'rotate('+ 90 +'deg)',
-						 '-ms-transform' : 'rotate('+ 90 +'deg)',
-						 'transform' : 'rotate('+ 90 + 'deg)'});
-			    $(this).addClass("open");
-			}
-			$(this).siblings(".toggleable").slideToggle(300);
-    	});*/
-    });
-	</script>
 </head>
 
 <body>
