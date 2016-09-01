@@ -9,6 +9,11 @@
     transform-origin:0 0;
     -webkit-transform-origin:0 0;
   }
+
+  #icon {
+    position: absolute;
+    height: 100%;
+  }
 }
 
 @media #{$small-and-down} {
@@ -17,7 +22,6 @@
   }
 
   $resume-shrink-factor: 0.5;
-
 }
 
 #resume {
@@ -125,25 +129,44 @@
   }
 }
 
-#work .collapsible-header a i,
-#courses .collapsible-header a i,
-#courses .collapsible-body .subtitle a i {
-  line-height: $button-height;
-  margin-right: 0;
-  @media #{$medium-and-down} {
-    margin-left: 0;
+.collapsible {
+  li:nth-of-type(2) .collapsible-header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
   }
-}
 
-#work .collapsible-header a,
-#courses .collapsible-header a,
-#courses .collapsible-body .subtitle a {
-  @media #{$medium-and-down} {
-    width: auto;
+  li:last-of-type .collapsible-header {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .collapsible-header {
+    background-color: lighten($primary-color, 30%);
+
+    a {
+      background-color: #FFF;
+      color: $secondary-color;
+    }
+  }
+  .collapsible-body {
+    background-color: color("grey", "lighten-4");
+  }
+
+  a {
+    @media #{$medium-and-down} {
+      width: auto;
+    }
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    i {
+      line-height: $button-height;
+      margin-right: 0;
+      @media #{$medium-and-down} {
+        margin-left: 0;
+      }
+    }
+  }
 }

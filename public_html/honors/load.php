@@ -10,7 +10,7 @@ $password = Credentials::getPassword();
 // If POST id is not set, default to 1.
 // This is for the include on ./index.php
 if(!isset($_POST["id"])) {
-    $_POST["id"] = 1;
+    $_POST["id"] = 0;
 }
 
 try {
@@ -24,7 +24,7 @@ try {
     if (isset($_POST["id"])) {
         $statement .= " c.id > :id AND";
     }
-    $statement .= " EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) ORDER BY c.year, c.quarter LIMIT 4";
+    $statement .= " EXISTS (SELECT 1 FROM posts p WHERE p.course_id = c.id) LIMIT 4";
 
     $query = $conn->prepare($statement);
     if (isset($_POST["year"])) {
@@ -50,14 +50,5 @@ try {
         echo(json_encode($results));
     }
 } catch(PDOException $e) {
-    if($php) {
-        echo "<h1 style='text-align: center; padding: 1em; margin: 0; color: #FFF; background-color: #3A3A3A;'>There was an error fetching posts.</h1>";
-        unset($php);
-    } else {
-        header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
-        echo($e);
-    }
-    exit();
+    http_response_code(500);
 }
-
-?>

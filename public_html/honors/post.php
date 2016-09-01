@@ -44,7 +44,7 @@ try {
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><?= $title; ?></title>
+    <title><?= strip_tags($title) ?></title>
     <meta name="description" content="<?php echo $meta; ?>">
 
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>

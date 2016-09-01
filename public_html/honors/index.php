@@ -21,7 +21,7 @@
                 $("#loading").slideDown();
 
                 var data = {};
-                if (year !== "") {
+                if (year !== "" && year !== "all") {
                     data.year = year
                 }
                 if (id > -1) {
@@ -47,7 +47,15 @@
             }
 
             function noMore() {
-                Materialize.toast($('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'), 4000);
+                if (!$("#courses").children().not(".template").length) {
+                    $('<li style="display: none"><div class="collapsible-header grey darken-1"><span class="flow-text white-text">There are no posts for this year.</span></div></li>')
+                        .appendTo($("#courses")).slideDown();
+                } else {
+                    Materialize.toast(
+                        $('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'),
+                        4000
+                    );
+                }
                 done = true;
             }
 
@@ -111,7 +119,7 @@
                     }
 
                     $newCourse.removeClass("template");
-                    $("#courses").append($newCourse);
+                    $newCourse.appendTo($("#courses"));
                     maxId = Math.max(maxId, post.id);
                 }
 
@@ -148,6 +156,26 @@
             }
 
             // We need the University links to trigger a page reload here
+            $("#university").parent().find("li a").click(function() {
+                var url = $(this).attr("href");
+                $('.button-collapse').topNav('hide');
+                $('#year-tabs').tabs('select_tab', url.substring(url.indexOf("#") + 1));
+            });
+            $('#year-tabs').tabs({
+                onShow: tabSwitch
+            });
+
+            function tabSwitch(context) {
+                first = true;
+                done = false;
+                maxId = -1;
+                $("#courses").children().not(".template").slideUp(function() {
+                    $(this).remove();
+                });
+                setTimeout(function() {
+                    load(context.selector.substring(1));
+                }, 400);
+            }
         });
     </script>
 </head>
@@ -165,21 +193,21 @@
         </ul>
         <ul class="collapsible" id="courses" data-collapsible="accordion">
             <li class="template">
-                <div class="collapsible-header teal lighten-1 white-text">
+                <div class="collapsible-header">
                     <div class="row">
                         <h5 class="col s9"></h5>
-                        <a class="btn right blue-text col s2">
+                        <a class="btn right col s2">
                             <span class="hide-on-med-and-down"></span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12"></h6>
                     </div>
                 </div>
-                <div class="collapsible-body grey lighten-5">
+                <div class="collapsible-body">
                     <ul class="subposts">
                         <li class="subpost container">
                             <div class="valign-wrapper row subtitle">
                                 <h5 class="col s9"></h5>
-                                <a class="btn right blue-text col s2">
+                                <a class="btn right col s2">
                                     <span class="hide-on-med-and-down"></span><i class="material-icons
                                     right">open_in_new</i>
                                 </a>
@@ -192,8 +220,8 @@
         <div id="endless-scroll"></div>
         <div class="grey lighten-2 valign-wrapper card" id="loading">
             <div class="container">
-                <div class="progress green">
-                    <div class="indeterminate"></div>
+                <div class="progress blue lighten-4">
+                    <div class="indeterminate blue"></div>
                 </div>
             </div>
         </div>

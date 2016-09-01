@@ -10,21 +10,21 @@
 
 <body>
 <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/header.html") ?>
-<main class="grey lighten-2">
+<main>
     <div class="container">
-        <h1 class="grey-text text-darken-2">Previous Work</h1>
+        <h1 class="grey-text text-darken-3">Previous Work</h1>
         <ul class="collapsible popout" id="work" data-collapsible="accordion">
             <li>
                 <div class="collapsible-header">
                     <div class="row">
                         <h5 class="col s9">Practice-It, University of Washington CSE</h5>
-                        <a href="http://practiceit.cs.washington.edu" class="btn right blue col s2">
+                        <a href="http://practiceit.cs.washington.edu" class="btn right col s2">
                             <span class="hide-on-med-and-down">Visit</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Seattle, Washington — 2016 to Present</h6>
                     </div>
                 </div>
-                <div class="collapsible-body grey lighten-5">
+                <div class="collapsible-body">
                     <p class="flow-text">Worked as part of a four-member faculty team to improve Practice-It, a
                         website run by the University of Washington that is used by hundreds of thousands of people
                         globally to practice and learn programming. Improved frontend usability as well as enhanced
@@ -40,13 +40,13 @@
                 <div class="collapsible-header">
                     <div class="row">
                         <h5 class="col s9">Ohio Supercomputing Center Summer Institute</h5>
-                        <a href="/work/OSCSI/" class="btn right blue col s2">
+                        <a href="/work/OSCSI/" class="btn right col s2">
                             <span class="hide-on-med-and-down">Watch</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Columbus, Ohio — 2012</h6>
                     </div>
                 </div>
-                <div class="collapsible-body grey lighten-5">
+                <div class="collapsible-body">
                     <p class="flow-text">
                         <img src="/images/oscsi.jpg" class="materialboxed" alt="Picture processing of Sun&apos;s corona" id="oscsi"
                              data-caption="The stages of identifying and mapping asteroids in NASA satellite photos
@@ -65,13 +65,13 @@
                 <div class="collapsible-header">
                     <div class="row">
                         <h5 class="col s9">Webmaster, Unitarian Universalist Ohio-Meadville District</h5>
-                        <a href="/work/omdyac/" class="btn right blue col s2">
+                        <a href="/work/omdyac/" class="btn right col s2">
                             <span class="hide-on-med-and-down">Visit</span><i class="material-icons right">open_in_new</i>
                         </a>
                         <h6 class="col s12">Westlake, Ohio — 2011 to 2014</h6>
                     </div>
                 </div>
-                <div class="collapsible-body grey lighten-5">
+                <div class="collapsible-body">
                     <p class="flow-text">
                         <img class="responsive-img materialboxed" src="/images/omdyac.jpg" alt="Screenshot of the website">
                         As webmaster, was charged with maintaining website to provide information to an estimated 300

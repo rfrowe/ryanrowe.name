@@ -152,7 +152,7 @@ header {
     margin-top: 1rem;
 }
 #courses {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 #loading {
     /* margin-bottom: 1rem; */
@@ -167,8 +167,9 @@ header {
     margin-bottom: 2rem;
 }
 #rand-cube {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    outline: none;
+    /* margin-right: auto; */
 }
 
 header, main, footer {

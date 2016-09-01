@@ -191,6 +191,8 @@
     .userView {
       padding: $sidenav-padding $sidenav-padding 0;
     }
+
+    background-color: lighten($footer-bg-color, 25%);
   }
 
   .side-nav {

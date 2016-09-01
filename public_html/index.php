@@ -45,7 +45,7 @@
     <div id="slideshow-spacer" class="grey darken-2"></div>
     <div id="welcome">
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1 class="grey-text text-darken-3">My Portfolio</h1>
             <p class="flow-text">
                 I'm currently a student at the University of Washington. I've been programming for over 7 years and have
                 created several iPhone applications as well as designed and maintained a few websites, some of which are
