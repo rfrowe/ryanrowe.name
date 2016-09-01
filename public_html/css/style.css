@@ -77,6 +77,7 @@ header {
 #icon {
     padding-top: 1em;
     padding-bottom: 1em;
+    visibility: hidden;
 }
 
 #nav-links {

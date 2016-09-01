@@ -52,7 +52,7 @@
                         .appendTo($("#courses")).slideDown();
                 } else {
                     Materialize.toast(
-                        $('<span class="valign-wrapper"><i class="material-icons green-text left">info_outline</i>No more posts for this year</span>'),
+                        $('<span class="valign-wrapper"><i class="material-icons blue-text left">info_outline</i>No more posts for this year</span>'),
                         4000
                     );
                 }
@@ -220,8 +220,8 @@
         <div id="endless-scroll"></div>
         <div class="grey lighten-2 valign-wrapper card" id="loading">
             <div class="container">
-                <div class="progress blue lighten-4">
-                    <div class="indeterminate blue"></div>
+                <div class="progress deep-purple lighten-4">
+                    <div class="indeterminate deep-purple"></div>
                 </div>
             </div>
         </div>

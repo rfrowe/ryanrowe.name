@@ -140,20 +140,21 @@
     border-bottom-right-radius: 2px;
   }
   .collapsible-header {
-    background-color: lighten($primary-color, 30%);
+    background-color: color("grey", "lighten-3");
+    //color: #FFF;
 
     a {
       background-color: #FFF;
-      color: $secondary-color;
+      color: lighten($secondary-color, 10%);
     }
   }
   .collapsible-body {
-    background-color: color("grey", "lighten-4");
+    background-color: color("grey", "lighten-5");
   }
 
   a {
     @media #{$medium-and-down} {
-      width: auto;
+      width: auto !important;
     }
     overflow: hidden;
     -webkit-user-select: none;
@@ -169,4 +170,8 @@
       }
     }
   }
+}
+
+#icon {
+  fill: $primary-color;
 }

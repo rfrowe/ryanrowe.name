@@ -227,7 +227,7 @@ $navbar-brand-font-size: 2.1rem !default;
 
 $sidenav-font-size: 14px !default;
 $sidenav-font-color: rgba(0,0,0,.87) !default;
-$sidenav-bg-color: lighten($secondary-color, 50%) !default;
+$sidenav-bg-color: lighten($primary-color, 40%) !default;
 $sidenav-padding: 16px !default;
 $sidenav-item-height: 48px !default;
 
@@ -249,8 +249,8 @@ $spinner-default-color: $secondary-color !default;
 /* 17. Tabs
    ========================================================================== */
 
-$tabs-underline-color: $primary-color-light !default;
-$tabs-text-color: $primary-color !default;
+$tabs-underline-color: lighten($secondary-color, 15%); //$primary-color-light !default;
+$tabs-text-color: $secondary-color; //$primary-color !default;
 $tabs-bg-color: #fff !default;
 
 
