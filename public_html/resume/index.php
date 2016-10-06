@@ -23,94 +23,89 @@
             <p>Website<br>
                 <span><a href="/">ryanrowe.name</a></span></p>
             <p>Contact<br>
-            <span><a href="tel:4405704611">(440) 570-4611</a><br>
-            <br>
+            <span>
             <a href="mailto:rfrowe@cs.uw.edu">rfrowe@cs.uw.edu</a><br>
-            <a href="mailto:rfrowe@uw.edu">ryanf.rowe@gmail.com</a></span></p>
+            <a href="mailto:ry@nrowe.name">ry@nrowe.name</a></span></p>
         </section>
         <div id="gradient"></div>
         <section id="info">
             <h2>Summary</h2>
-            <p>Computer programmer currently attending the University of Washington. Programming for over 7
-                years despite no formal education prior to 10th grade. Created several iPhone apps, coded and
-                managed website for 3 years, and received a &lsquo;5&rsquo; on AP Computer Science exam by
-                self-study guided by determination and impulse to learn.</p><br>
+            <p>Full stack developer with experience developing in Java (Jersey, Tomcat, JUnit), JavaScript
+               (jQuery), and PHP in continuous deployment environments including Amazon Elastic Beanstalk,
+               and Docker. Searching to learn new strategies and frameworks and to be inspired.</p><br>
 
             <h2>Education</h2>
             <h4>University of Washington</h4>
-            <h5>Bachelor of Science in Computer Science — 2019</h5>
-            <p>GPA of 3.94. Relevant courses:</p>
+            <h5>Bachelor's in Computer Science — 2019 (Expected)</h5>
+            <p>Second year student in the computer science department and honors college</p>
             <ul>
-                <li>Introduction to Java Programming I &amp; II</li>
+                <li>Expected graduation: June 2019</li>
+                <li>Intro to Programming (Java Data Structures and Algorithms)</li>
                 <li>Calculus with Analytical Geometry</li>
+                <li>Linear Matrix Algebra</li>
+                <li>Hardware Software Interface</li>
             </ul>
             <br>
 
-            <h4>Westlake High School Class of 2015</h4>
-            <h5>Honors Diploma — 2011-2015</h5>
-            <p>Graduated Suma Cum Laude and maintained GPA of 4.805/5.333 and class rank of 17/308. During the
-                course of education, completed seven Advanced Placement college-level courses, was a member of
-                the marching band for all four years, and co-founded the school’s LGBT Alliance.</p>
+            <h4>Westlake High School</h4>
+            <h5>Honors Diploma, Summa Cum Laude — 2011-2015</h5>
+            <p>Completed seven Advanced Placement courses</p>
             <ul>
-                <li>Self-studied for AP Computer Science exam and achieved 5/5 score</li>
-                <li>Member of National Spanish Honors Society</li>
+                <li>Self-taught AP Computer Science and achieved 5/5 exam score</li>
+                <li>Co-founded school’s LGBT Alliance</li>
             </ul>
-            <br>
 
             <h2>Experience</h2>
-            <h4>Webmaster, Unitarian Universalist Ohio-Meadville District</h4>
-            <h5>Westlake, Ohio — 2011-2014</h5>
-            <p>As webmaster, was charged with maintaining website to provide information to an estimated 300
-                people in OH, PA, and WV for church youth group. During course of work utilized Adobe
-                Dreamweaver to manage project and publish code. Archived version visible at <a
-                    href="http://ryanrowe.name/work/omdyac/">http://ryanrowe.name/work/omdyac/</a>.</p>
-            <ul>
-                <li>Completely redesigned website frontend and backend, requiring over 600 hours of work</li>
-                <li>Integrated PHP server-side scripting and MySQL to generate dynamic web content</li>
-                <li>Created administrative user interface using up-to-date password security and login session
-                    standards
-                </li>
-            </ul>
-            <br>
 
-            <h4>Student, Ohio Supercomputing Center Summer Institute</h4>
-            <h5>Columbus, Ohio — 2012</h5>
-            <p>Was one of 16 students selected from Ohio to participate in summer program at Ohio State
-                University. Lead team tasked with using MATLAB to perform data analysis on NASA satellite images
-                to search for astronomical objects.</p>
-            <ul>
-                <li>New leadership experience, mediated arguments, and managed communication</li>
-                <li>Gained practical knowledge on data analysis standards</li>
-                <li>Presented findings to over 100 people</li>
-            </ul>
-            <br>
-
-            <h4>Developer, Pracice-It: University of Washington CSE Department</h4>
-            <h5>Seattle, Washington — 2016</h5>
-            <p>Worked as part of a four-member faculty team to improve Practice-It, a website run by the
-                University of Washington that is used by hundreds of thousands of people globally to practice
-                and learn programming. Improved frontend usability as well as enhanced backend and added new
-                features to both.</p>
+            <h4>Developer, Practice-It: University of Washington CSE Department</h4>
+            <h5>Seattle, Washington — 2016-</h5>
+            <p>Worked as part of a four-member team to improve Practice-It, a website run by
+            the Computer Science Department that is used by hundreds of thousands of
+            people globally to practice and learn programming.</p>
             <ul>
                 <li>Gained experience working on enterprise level software</li>
                 <li>Collaborated with other team members using version control software</li>
-                <li>Developed and improved frontend and backend interfaces</li>
+                <li>Implemented new restful backend API using Java/Jersery and new frontend UI</li>
+                <li>Deployed software using git, Docker, and Jenkins continuous integration</li>
+                <li>Optimized app to be deployed with Amazon Elastic Beanstalk leveraging Amazon
+                    Relational Data Service (RDS)/MySQL as data tier</li>
+                <li>Updated app from SHA1 to PBKDF2 with HMAC SHA512 password hashing to meet new
+                    security standards</li>
             </ul>
+            <br>
+
+            <h4>Participant, Ohio Supercomputing Center Summer Institute</h4>
+            <h5>Columbus, Ohio — 2012</h5>
+            <p>Was one of 16 students selected from Ohio to participate in summer program
+            at Ohio State University. Lead team tasked with using MATLAB to perform data
+            analysis on NASA satellite images to search for astronomical objects.</p>
+            <ul>
+                <li>New leadership experience, mediated arguments, and managed communication</li>
+                <li>Analyzed thousands of NASA LASCO C2 satellite photos to track comet
+                    vectors near Sun’s corona</li>
+            </ul>
+            <br>
+
+
+            <h4>Webmaster, Unitarian Universalist Ohio-Meadville District</h4>
+            <h5>Ohio — 2011–2014</h5>
+            <p>Designed and maintained a website for tri-state area church youth group. Utilized
+            Adobe Dreamweaver to manage projects and publish code written in PHP
+            using a MySQL data tier.</p>
             <br>
 
             <h2>Awards</h2>
             <h4>AP Scholar (2014) and AP Scholar with Distinction (2015)</h4>
             <h5>Received score of 5/5 on all seven Advanced Placement exams taken</h5>
 
-            <h4>UW Purple and Gold Scholarship</h4>
-            <h5>Academic scholarship available to out-of-state students</h5>
+            <h4>2015-16 Annual Dean's List</h4>
 
-            <h2 id="skills">Skills</h2>
+            <h2 id="skills">Traits</h2>
             <ul>
-                <li>Fluent in HTML, PHP, and Java with experience in iOS and Android development</li>
-                <li>Strong work ethic and desire to resolve problems</li>
-                <li>Adept at Unix and Macintosh systems</li>
-                <li>Skilled with version control software such as Git</li>
+                <li>Strong work ethic</li>
+                <li>Auto-didactic</li>
+                <li>Puzzle solver</li>
+                <li>Blue hair</li>
             </ul>
         </section>
     </div> <!-- end #resume -->
