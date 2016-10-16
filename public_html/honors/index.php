@@ -14,7 +14,7 @@
             var maxId = -1;
             var done = false;
 
-            load(window.location.hash.substring(1), maxId);
+            checkEndlessScroll("endless-scroll");
 
             function load(year, id) {
                 loading = true;
@@ -139,7 +139,7 @@
             });
 
             function checkEndlessScroll(el) {
-                if (isInView(document.getElementById(el))) {
+                while (isInView(document.getElementById(el))) {
                     if(!loading && !done) {
                         console.log("loading past id: " + maxId);
                         load(window.location.hash.substring(1), maxId);
@@ -173,6 +173,7 @@
                     $(this).remove();
                 });
                 setTimeout(function() {
+                    window.location.hash = context.selector;
                     load(context.selector.substring(1));
                 }, 400);
             }
