@@ -30,7 +30,7 @@
           $(window).resize( function() {
             if (window.innerWidth > 992) {
               // Close menu if window is resized bigger than 992 and user has fixed sidenav
-              if ($('#sidenav-overlay').length !== 0 && menuOut) {
+              if ($('.sidenav-overlay').length !== 0 && menuOut) {
                 removeMenu(true);
               }
               else {
@@ -57,7 +57,7 @@
           panning = false;
           menuOut = false;
 
-          $('#sidenav-overlay').velocity({opacity: 0}, {duration: 200,
+          $('.sidenav-overlay').velocity({opacity: 0}, {duration: 200,
               queue: false, easing: 'easeOutQuad',
             complete: function() {
               $(this).remove();
@@ -115,8 +115,8 @@
             $body.width(oldWidth);
 
             // If overlay does not exist, create one and if it is clicked, close menu
-            if ($('#sidenav-overlay').length === 0) {
-              var overlay = $('<div id="sidenav-overlay"></div>');
+            if ($('.sidenav-overlay').length === 0) {
+              var overlay = $('<div class="sidenav-overlay"></div>');
               overlay.css('opacity', 0).click( function(){
                 removeMenu();
               });
@@ -137,7 +137,7 @@
             // Percentage overlay
             var overlayPerc;
             overlayPerc = y / $("#slidey-nav").height();
-            $('#sidenav-overlay').velocity({opacity: overlayPerc }, {duration: 10, queue: false, easing: 'easeOutQuad'});
+            $('.sidenav-overlay').velocity({opacity: overlayPerc }, {duration: 10, queue: false, easing: 'easeOutQuad'});
           }
 
         }).bind('panend', function(e) {
@@ -162,7 +162,7 @@
                 menu_id.velocity({'translateX': '0', 'translateY': [0, topPos]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
               }
 
-              $('#sidenav-overlay').velocity({opacity: 1 }, {duration: 50, queue: false, easing: 'easeOutQuad'});
+              $('.sidenav-overlay').velocity({opacity: 1 }, {duration: 50, queue: false, easing: 'easeOutQuad'});
               dragTarget.css({height: '100%', width: '100%', top: $("header").height() + menu_id.height() + "px"});
               menuOut = true;
             }
@@ -180,7 +180,7 @@
                     });
                     }
                   });
-              $('#sidenav-overlay').velocity({opacity: 0 }, {duration: 200, queue: false, easing: 'easeOutQuad',
+              $('.sidenav-overlay').velocity({opacity: 0 }, {duration: 200, queue: false, easing: 'easeOutQuad',
                 complete: function () {
                   $(this).remove();
                 }});
@@ -225,7 +225,7 @@
 
                   });
 
-              var overlay = $('<div id="sidenav-overlay"></div>');
+              var overlay = $('<div class="sidenav-overlay"></div>');
               overlay.css('opacity', 0)
               .click(function(){
                 menuOut = false;
@@ -256,7 +256,7 @@
       this.trigger('click');
     },
     hide : function() {
-      $('#sidenav-overlay').trigger('click');
+      $('.sidenav-overlay').trigger('click');
     }
   };
 
