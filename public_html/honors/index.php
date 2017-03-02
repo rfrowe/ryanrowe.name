@@ -139,7 +139,7 @@
             });
 
             function checkEndlessScroll(el) {
-                while (isInView(document.getElementById(el))) {
+                if (isInView(document.getElementById(el))) {
                     if(!loading && !done) {
                         console.log("loading past id: " + maxId);
                         load(window.location.hash.substring(1), maxId);
