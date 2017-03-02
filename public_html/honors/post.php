@@ -27,7 +27,7 @@ try {
         exit();
     } else {
         $text = $results[0]["content"];
-        $description = $results[0]["meta"];
+        $meta = $results[0]["meta"];
         $style = $results[0]["style"];
         $title = $results[0]["title"];
         $js = $results[0]["js"];
