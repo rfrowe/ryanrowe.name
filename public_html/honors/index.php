@@ -83,8 +83,9 @@
                     // Clone template
                     var $newCourse = $template.clone();
                     // Set course name
-                    $newCourse.find(".collapsible-header h5").text(post.course);
-                    $newCourse.find(".collapsible-header h6").text(post.quarter.capitalize() + " " + gradeToYear(post.year));
+                    $newCourse.find(".collapsible-header h5").text(post.title);
+                    $newCourse.find(".collapsible-header h6.quarter").text(post.quarter.capitalize() + " " + gradeToYear(post.year));
+                    $newCourse.find(".collapsible-header h6.course").text(post.course);
                     // Auto-open if first
                     if (first) {
                         $newCourse.find(".collapsible-header").addClass("active");
@@ -200,7 +201,7 @@
                         <a class="btn right col s2">
                             <span class="hide-on-med-and-down"></span><i class="material-icons right">open_in_new</i>
                         </a>
-                        <h6 class="col s12"></h6>
+                        <h6 class="col s6 quarter"></h6><h6 class="col s6 course"></h6>
                     </div>
                 </div>
                 <div class="collapsible-body">
