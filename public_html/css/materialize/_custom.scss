@@ -26,16 +26,13 @@
 
 #resume {
   @media #{$large-and-up} {
-    width: 75%
+    width: 80%;
   }
   @media #{$medium-and-down} {
     margin: 1em;
 
-    #contact {
-      display: none !important;
-    }
-    #gradient {
-      margin-left: 0;
+    #main-event h4 {
+      clear: both;
     }
 
     h1 {
@@ -48,7 +45,7 @@
       font-size: $h3-fontsize * 0.75;
     }
     h4 {
-      font-size: $h4-fontsize * 0.75;
+      font-size: $h4-fontsize * 0.75 * 0.75;
     }
     h5 {
       font-size: $h5-fontsize * 0.75;
@@ -57,7 +54,7 @@
       font-size: $h6-fontsize * 0.75;
     }
   }
-  @media #{$small-and-down}, only print {
+  @media #{$small-and-down} {
     h1 {
       font-size: $h1-fontsize * 0.5;
     }
@@ -77,12 +74,6 @@
     }
     h6 {
       font-size: $h6-fontsize * 0.5;
-    }
-  }
-
-  @media only print {
-    h2 {
-      font-size: $h2-fontsize * 0.35;
     }
   }
 }
