@@ -36,6 +36,7 @@
 <main>
     <div id="main-image">
         <img alt="Me looking pensive on a lake" src="/images/lake.jpg" width="3409" height="1173">
+        <img alt="A beautiful scenic look from Wallace Falls State Park, WA" src="/images/wallacefalls.jpg" width="2500" height="860">
         <img class="inactive" alt="A rainbow on NE Campus Pkwy" src="/images/rainbow.jpg" width="3409" height="1173">
         <img class="inactive" alt="The Seattle skyline" src="/images/city.jpg" width="2624" height="903">
         <img class="inactive" alt="An art exhibit at the Henry Art Museum" src="/images/henry.jpg"
