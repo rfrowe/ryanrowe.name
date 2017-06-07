@@ -99,10 +99,10 @@
                     <p>Second year student in the computer science department and honors college</p>
                     <ul>
                         <li>Expected graduation: June 2019</li>
-                        <li>Calculus with Analytical Geometry</li>
-                        <li>Linear Matrix Algebra</li>
                         <li>Data Structures &amp; Parallelism</li>
+                        <li>Software Design and Implementation</li>
                         <li>Hardware Software Interface</li>
+                        <li>Linear Matrix Algebra; Calculus with Analytic Geometry</li>
                     </ul>
                 </div>
             </div>
@@ -130,14 +130,14 @@
 
                 <div class="col m12 l10 push-l2">
                     <p>
-                        Worked as part of a four-member team to improve Practice-It, a website run by the Computer
-                        Science Department that is used by hundreds of thousands of people globally to practice and
-                        learn programming.
+                        Worked as part of a four-member team working on Practice-It, a website run by the Computer
+                        Science Department that is used by college and high school students globally to practice and
+                        learn programming, which receives over half a million pageviews monthly.
                     </p>
                     <ul>
                         <li>Gained experience working on enterprise level software</li>
                         <li>Collaborated with other team members using version control software</li>
-                        <li>Implemented new restful backend API using Java/Jersery and new frontend UI</li>
+                        <li>Implemented new restful backend API using Java/Jersery and frontend UI</li>
                         <li>Deployed software using git, Docker, and Jenkins continuous integration</li>
                         <li>Optimized app to be deployed with Amazon Elastic Beanstalk leveraging Amazon Relational Data
                             Service (RDS)/MySQL as data tier</li>
