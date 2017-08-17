@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/credentials.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/smtp.secret.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php');
 //require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/autoload.php');
 require_once($_SERVER['DOCUMENT_ROOT']."/files/php/PHPMailer/PHPMailerAutoload.php");

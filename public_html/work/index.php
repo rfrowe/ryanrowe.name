@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Import credentials for db connection
-require_once($_SERVER['DOCUMENT_ROOT'].'/files/credentials.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . "/files/php/db.secret.php");
 
 // Get values
 $dsn = Credentials::getDSN();
