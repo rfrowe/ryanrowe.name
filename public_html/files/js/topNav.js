@@ -15,15 +15,15 @@
         var dragTarget = $('<div class="drag-target"></div>');
         $('body').append(dragTarget);
 
-        menu_id.css('transform', 'translateX(0) translateY(-105%)');
+        menu_id.css({'translateX': '0', 'translateY': '-105%', opacity: 0});
         dragTarget.css({'left': 0, 'right': 0, 'width': "75%", 'height': 10, 'z-index': 999}); // Add Touch Area
 
         // If fixed sidenav, bring menu out
         if (menu_id.hasClass('fixed')) {
-            if (window.innerWidth > 992) {
-              menu_id.css('transform', 'translateX(0) translateY(0)');
-            }
+          if (window.innerWidth > 992) {
+            menu_id.css({'translateX': '0', 'translateY': '0%', opacity: 1});
           }
+        }
 
         // Window resize to reset on large screens fixed
         if (menu_id.hasClass('fixed')) {
@@ -36,6 +36,7 @@
               else {
                 // menu_id.removeAttr('style');
                 menu_id.css('transform', 'translateX(0) translateY(0)');
+                menu_id.css('opacity', 1);
                 // menu_id.css('width', options.menuWidth);
               }
             }
@@ -66,7 +67,7 @@
           // Reset phantom div
           dragTarget.css({height: '10', width: '75%', top: 0});
           menu_id.velocity(
-            {'translateX': '0', 'translateY': '-105%'},
+            {'translateX': '0', 'translateY': '-105%', opacity: 0},
             { duration: 200,
               queue: false,
               easing: 'easeOutCubic',
@@ -210,7 +211,7 @@
               //menu_id.velocity({'translateX': [0, -1 * options.menuWidth]}, {duration: 300, queue: false, easing:
               // 'easeOutQuad'});
               menu_id.velocity(
-                  {'translateX': '0', 'translateY': '0'},
+                  {'translateX': '0', 'translateY': '0', opacity: 1},
                   { duration: 200,
                     queue: false,
                     easing: 'easeOutCubic',
