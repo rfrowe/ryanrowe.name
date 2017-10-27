@@ -1,3 +1,4 @@
+<?php date_default_timezone_set('America/Los_Angeles') ?>
 <footer class="page-footer">
     <div id="contact-error" class="modal">
         <div class="modal-content">

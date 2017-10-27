@@ -40,6 +40,7 @@ try {
 
 ?>
 
+<?php session_start() ?>
 <!doctype html>
 <html>
 <head>

@@ -16,7 +16,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="/files/js/common.js"></script>
 
-    <?php session_start(); require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php'); ?>
+    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/files/php/CSFR.php'); ?>
 
     <?php readfile($_SERVER['DOCUMENT_ROOT'] . "/files/favicons.html") ?>
 
