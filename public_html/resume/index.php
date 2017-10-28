@@ -18,7 +18,7 @@
     <div class="title-thing valign-wrapper hide-on-med-and-down">
         <div class="valign">
             <h1>Ryan <span id="last-name">Rowe</span></h1>
-            <h5>Software Engineer<h5>
+            <h5>Software Developer<h5>
         </div>
     </div>
     <div id="resume" class="text dropshadow row">
@@ -31,44 +31,45 @@
                 <li>Java</li>
                 <li>PHP & HTML</li>
                 <li>JavaScript</li>
+                <li>Ruby</li>
                 <li>Python</li>
+                <li>C/C++</li>
                 <li>SQL</li>
-                <li>LaTeX</li>
             </ul>
 
             <h3>projects</h3>
             <ul>
                 <li>
-                    <a href="https://github.com/rfrowe/ryanrowe.name">Portfolio</a><br />
-                    <span class="indent">Materialize, PHP, JS, AWS</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/quadcopter">Quadcopter</a><br />
-                    <span class="indent">C, Arduino</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/rynet">Network Monitor Site</a><br />
-                    <span class="indent">PHP, Bash, CSS</span>
+                    Malakai<br />
+                    <span class="indent">Rails|Jenkins|Angular</span>
                 </li>
                 <li>
                     <a href="https://github.com/rfrowe/tweetomatic">Tweetomatic</a><br />
-                    <span class="indent">Java, Stanford NLP</span>
+                    <span class="indent">Java|Stanford NLP</span>
+                </li>
+                <li>
+                    <a href="https://github.com/rfrowe/ryanrowe.name">Portfolio</a><br />
+                    <span class="indent">Materialize|PHP|JS|AWS</span>
+                </li>
+                <li>
+                    <a href="https://github.com/rfrowe/quadcopter">Quadcopter</a><br />
+                    <span class="indent">C|Arduino</span>
+                </li>
+                <li>
+                    <a href="https://github.com/rfrowe/rynet">Network Monitor Site</a><br />
+                    <span class="indent">PHP|Bash|CSS</span>
                 </li>
             </ul>
 
             <h3>awards</h3>
             <ul>
                 <li>
-                    Annual Dean’s List<br />
-                    <span class="indent">2015–2016</span>
-                </li>
-                <li>
-                    AP Scholar with Distinction<br />
-                    <span class="indent">2015</span>
+                    Dean’s List<br />
+                    <span class="indent">2015–2017</span>
                 </li>
                 <li>
                     AP Scholar<br />
-                    <span class="indent">2014</span>
+                    <span class="indent">2014, 2015</span>
                 </li>
             </ul>
 
@@ -77,32 +78,41 @@
                 <li>Strong work ethic</li>
                 <li>Auto-didactic</li>
                 <li>Puzzle solver</li>
-                <li>Blue hair</li>
             </ul>
         </section>
         <section id="main-event" class="col s12 m9">
             <h3><span class="summary">sum</span>mary</h3>
             <div class="row">
                 <p class="col s12">
-                    Full stack developer with experience developing in Java (Jersey, Tomcat, JUnit), JavaScript (jQuery), and
-                    PHP in continuous deployment environments including Amazon Elastic Beanstalk, and Docker. Searching to
-                    learn new strategies and frameworks and to be inspired.
+                    Full stack developer with versatile experience in functional and OOP languages, monolithic and
+                    microservice architectures, and waterfall and agile development processes. Searching for new
+                    opportunities to apply my skills at the forefront of computing while learning along the way.
                 </p>
             </div>
 
             <h3><span class="education">edu</span>cation</h3>
             <div class="row edu">
-                <div class="col l2 m2 s3">2015 &mdash;</div>
+                <div class="col l2 m2 s3">2018 &mdash; 2019</div>
+                <span class="aside">Masters’s in Computer Science</span>
+                <h4 class="col s10">University of Washington</h4>
+
+                <div class="col m12 l10 push-l2">
+                    <p>Accepted to UW CSE's combined B.S./M.S. program for 2018</p>
+                </div>
+            </div>
+
+            <div class="row edu">
+                <div class="col l2 m2 s3">2015 &mdash; 2018</div>
                 <span class="aside">GPA of 3.94, Bachelor’s in Computer Science</span>
                 <h4 class="col s10">University of Washington</h4>
 
                 <div class="col m12 l10 push-l2">
-                    <p>Second year student in the computer science department and honors college</p>
+                    <p>Third year student in UW School of Computer Science and Engineering</p>
                     <ul>
-                        <li>Expected graduation: June 2019</li>
+                        <li>Expected graduation: June 2018</li>
                         <li>Data Structures &amp; Parallelism</li>
-                        <li>Software Design and Implementation</li>
                         <li>Hardware Software Interface</li>
+                        <li>Machine Learning; Artificial Intelligence</li>
                         <li>Linear Matrix Algebra; Calculus with Analytic Geometry</li>
                     </ul>
                 </div>
@@ -125,56 +135,59 @@
 
             <h3><span class="experience">exp</span>erience</h3>
             <div class="row exp">
-                <div class="col l2 m2 s3">2016 &mdash;</div>
+                <div class="col l2 m2 s3">2017</div>
+                <span class="aside">Software Developer Intern</span>
+                <h4 class="col s10">Hulu, Ad Platform</h4>
+
+                <div class="col m12 l10 push-l2">
+                    <p>
+                        Joined Ad Platform scrum team, responsible for ad serving and sales
+                        infrastructure, to create ad tracing diagnostic web service to assist in
+                        repeated ad reduction and improved customer experience.
+                    </p>
+                    <ul>
+                        <li>Designed and implemented AngularJS single page application served through Rails 5</li>
+                        <li>Architected backend Rails API for asynchronous request processing</li>
+                        <li>Sourced data from Hive distributed database, queried via Presto</li>
+                        <li>Participated in agile development process and utilized stakeholder-centered, iterative design process</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">2016 &mdash; 2017</div>
+                <span class="aside">Developer</span>
+                <h4 class="col s10">Grade-It: University of Washington CSE Department</h4>
+
+                <div class="col m12 l10 push-l2">
+                    <p>
+                        Overhauled legacy PHP application, used by UW and many other schools to grade CS
+                        assignments, by assisting in migration to Zend framework and leading construction
+                        of CI pipeline consisting of automated linting, unit testing, and deployment.</p>
+                    <ul>
+                        <li>Gained experience working on enterprise level software project</li>
+                        <li>Designed and implemented continuous integration pipeline integrated with GitLab CI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">2016</div>
                 <span class="aside">Developer</span>
                 <h4 class="col s10">Practice-It: University of Washington CSE Department</h4>
 
                 <div class="col m12 l10 push-l2">
                     <p>
-                        Worked as part of a four-member team working on Practice-It, a website run by the Computer
-                        Science Department that is used by college and high school students globally to practice and
-                        learn programming, which receives over half a million pageviews monthly.
+                        Worked as part of a four-member faculty team to improve Practice-It, a
+                        website run by the University of Washington that is used by hundreds of thousands of people
+                        globally to practice and learn programming. Improved frontend usability as well as enhanced
+                        backend and added new features to both.
                     </p>
                     <ul>
                         <li>Gained experience working on enterprise level software</li>
                         <li>Collaborated with other team members using version control software</li>
-                        <li>Implemented new restful backend API using Java/Jersery and frontend UI</li>
-                        <li>Deployed software using git, Docker, and Jenkins continuous integration</li>
-                        <li>Optimized app to be deployed with Amazon Elastic Beanstalk leveraging Amazon Relational Data
-                            Service (RDS)/MySQL as data tier</li>
-                        <li>Updated app from SHA1 to PBKDF2 with HMAC SHA512 password hashing to meet new security standards</li>
+                        <li>Developed and improved frontend and backend interfaces</li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="row exp">
-                <div class="col l2 m2 s3">2012</div>
-                <span class="aside">Participant</span>
-                <h4 class="col s10">Ohio Supercomputing Center Summer Institute</h4>
-
-                <div class="col m12 l10 push-l2">
-                    <p>
-                        Was one of 16 students selected from Ohio to participate in summer program at Ohio State
-                        University. Lead team tasked with using MATLAB to perform data analysis on NASA satellite
-                        images to search for astronomical objects.
-                    </p>
-                    <ul>
-                        <li>New leadership experience, mediated arguments, and managed communication</li>
-                        <li>Analyzed thousands of NASA LASCO C2 satellite photos to track comet vectors near Sun’s corona</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row exp">
-                <div class="col l2 m2 s3">2011 &mdash; 2014</div>
-                <span class="aside">Volunteer Webmaster</span>
-                <h4 class="col s10">Unitarian Universalist Ohio-Meadville District</h4>
-
-                <div class="col m12 l10 push-l2">
-                    <p>
-                        Designed and maintained a website for tri-state area church youth group. Utilized Adobe
-                        Dreamweaver to manage projects and publish code written in PHP using a MySQL data tier.
-                    </p>
                 </div>
             </div>
         </section>
