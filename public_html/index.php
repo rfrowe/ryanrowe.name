@@ -47,20 +47,24 @@
     <div id="slideshow-spacer" class="grey darken-2"></div>
     <div id="welcome">
         <div class="container">
-            <h1 class="grey-text text-darken-3">My Portfolio</h1>
+            <h1 class="grey-text text-darken-3">Hello, world!</h1>
             <p class="flow-text">
-                I'm currently a student at the University of Washington. I've been programming for over 7 years and have
-                created several iPhone applications as well as designed and maintained a few websites, some of which are
-                featured in the <a href="work">work tab</a>. After receiving a '5' on the AP Computer Science exam and
-                achieving a grade of 4.0 in <i>Introduction to Java Programming</i> and 3.9 in <i>Calculus with
-                    Analytical Geometry</i>, I am well on my way toward my dream of majoring in Computer Science.
+                I'm current a third-year computer science student at the University of Washington with an expected
+                graduation date of June 2018. After graduation, I will be returning to UW to pursue a research-focused
+                Master's degree in computer science, a program to which I've already been accepted.
+            </p>
+            <p class="flow-text">
+                Since gaining entrance into the computer science program with an in-major GPA of 4.0, I have
+                been learning voraciously and utilizing and honing my skills whenever possible including building a
+                quad-copter, chess AIs, and this website. Much of the work I've done can be found in the
+                <a href="/work">work tab</a> and chronicles of my experiences at college along with some other fun
+                tidbits and personal projects can be found in my <a href="/honors">honors portfolio</a>.
             </p>
 
             <p class="flow-text">
-                On this site, you will find my résumé, links to my previous work, a portfolio of my thoughts, experiences,
-                and creations throughout my time at the University of Washington, as well as a way to get in touch with me.
-                Alternatively, you can <a class="contact-us modal-trigger" href="#contact">contact me here</a> or email
-                me at <a href="mailto:ry@nrowe.name">ry@nrowe.name</a>.
+                Feel free to <a class="contact-us modal-trigger" href="#contact">get in touch with me</a> or send me an
+                email me at <a href="mailto:ry@nrowe.name">ry@nrowe.name</a> if you have any questions or any opportunities
+                you think I&rsquo;d be a great fit for!
             </p>
         </div> <!-- end .container -->
     </div> <!-- end #welcome -->
