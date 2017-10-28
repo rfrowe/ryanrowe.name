@@ -1,6 +1,6 @@
 <?php
 // Import credentials for db connection
-require_once("./credentials.php");
+require_once($_SERVER['DOCUMENT_ROOT'].'/files/credentials.php');
 header('Content-type: text/html; charset=UTF-8');
 
 // Get values

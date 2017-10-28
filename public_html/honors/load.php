@@ -1,6 +1,6 @@
 <?php
 // Import credentials for db connection
-require_once("./credentials.php");
+require_once($_SERVER['DOCUMENT_ROOT'].'/files/credentials.php');
 
 // Get values
 $dsn = Credentials::getDSN();
@@ -41,7 +41,6 @@ try {
         http_response_code(404);
     } else {
         foreach($results as &$row) {
-            //echo $row["html"] . "\n";
             $query = $conn->prepare("SELECT * FROM posts WHERE course_id = ?");
             $query-> bindValue(1, $row["id"], PDO::PARAM_INT);
             $query->execute();
