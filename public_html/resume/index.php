@@ -76,14 +76,20 @@
             <h3><span class="education">edu</span>cation</h3>
             <div class="row edu">
                 <div class="col l2 m2 s3">2018 &mdash; 2019</div>
-                <span class="aside">Masters’s in Computer Science, Expected June 2019</span>
+                <span class="aside">Masters’s in Computer Science</span>
                 <h4 class="col s10">University of Washington</h4>
+                <div class="col m12 l10 push-l2">
+                    <p>Expected graduation June 2019</p>
+                </div>
             </div>
 
             <div class="row edu">
                 <div class="col l2 m2 s3">2015 &mdash; 2018</div>
-                <span class="aside">Magna Cum Laude, 3.93 GPA, Bachelor’s in Computer Science</span>
+                <span class="aside">Bachelor’s in Computer Science</span>
                 <h4 class="col s10">University of Washington</h4>
+                <div class="col m12 l10 push-l2">
+                    <p>Magna Cum Laude, 3.93 GPA</p>
+                </div>
             </div>
 
             <div class="row edu">
