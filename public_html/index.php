@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="maNDrCWkManMhBRV9R5hzi4FlEJUBk3Wb9bBvVGhIa4"/>
     <meta name="description"
-          content="I'm currently a student at the University of Washington. I've been programming for over 7 years despite having no germane formal education. I have created several iPhone applications as well as designed and maintained a few websites. After receiving a '5' on the AP Computer Science exam and achieving a grade of 4.0 in Introduction to Java Programming and 3.9 in Calculus with Analytical Geometry, I am well on my way toward my dream of majoring in Computer Science.">
+          content="I'm a 5th year master's student in Computer Science at the University of Washington"
     <title>Ryan Rowe</title>
 
     <?php require($_SERVER['DOCUMENT_ROOT'] . "/files/common.php") ?>
@@ -48,19 +48,17 @@
     <div id="welcome">
         <div class="container">
             <h1 class="grey-text text-darken-3">Hello, world!</h1>
-            <p class="flow-text">
-                I'm current a third-year computer science student at the University of Washington with an expected
-                graduation date of June 2018. After graduation, I will be returning to UW to pursue a research-focused
-                Master's degree in computer science, a program to which I've already been accepted.
+            <p class="float-text">
+                I'm a 5th year master's student in Computer Science at the University of Washington. I
+                love solving problems whether it's finding the most efficient implementation of a program,
+                finding the best way to write components on a breadboard, or object tracking in videos.
             </p>
-            <p class="flow-text">
-                Since gaining entrance into the computer science program with an in-major GPA of 4.0, I have
-                been learning voraciously and utilizing and honing my skills whenever possible including building a
-                quad-copter, chess AIs, and this website. Much of the work I've done can be found in the
-                <a href="/work">work tab</a> and chronicles of my experiences at college along with some other fun
-                tidbits and personal projects can be found in my <a href="/honors">honors portfolio</a>.
+            <p class="float-text">
+                Much of the work I've done can be found in the <a href="/work">work tab</a> and chronicles
+                of my experiences at college along with some other fun tidbits and personal projects can be
+                found in my <a href="/honors">honors portfolio</a>. For the most up-to-date info, check out
+                my <a href="https://github.com/rfrowe">github</a>.
             </p>
-
             <p class="flow-text">
                 Feel free to <a class="contact-us modal-trigger" href="#contact">get in touch with me</a> or send me an
                 email me at <a href="mailto:ry@nrowe.name">ry@nrowe.name</a> if you have any questions or any opportunities

@@ -26,6 +26,18 @@
             <h3>location</h3>
             <p>Seattle, WA</p>
 
+            <h3>Coursework</h3>
+            <ul>
+                <li>Grad Machine Learning</li>
+                <li>Artificial Intelligence</li>
+                <li><span class="indent">Top score on final exam</span></li>
+                <li>Computer Vision</li>
+                <li>Embedded Systems</li>
+                <li>Operating Systems</li>
+                <li>Systems Programming</li>
+                <li>Data Structures</li>
+            </ul>
+
             <h3>languages</h3>
             <ul>
                 <li>Java</li>
@@ -37,157 +49,137 @@
                 <li>SQL</li>
             </ul>
 
-            <h3>projects</h3>
-            <ul>
-                <li>
-                    Malakai<br />
-                    <span class="indent">Rails|Jenkins|Angular</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/tweetomatic">Tweetomatic</a><br />
-                    <span class="indent">Java|Stanford NLP</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/ryanrowe.name">Portfolio</a><br />
-                    <span class="indent">Materialize|PHP|JS|AWS</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/quadcopter">Quadcopter</a><br />
-                    <span class="indent">C|Arduino</span>
-                </li>
-                <li>
-                    <a href="https://github.com/rfrowe/rynet">Network Monitor Site</a><br />
-                    <span class="indent">PHP|Bash|CSS</span>
-                </li>
-            </ul>
-
             <h3>awards</h3>
             <ul>
                 <li>
-                    Dean’s List<br />
-                    <span class="indent">2015–2017</span>
+                    Research Funding<br />
+                    <span class="indent">Personal Robotics Lab</span>
+                    <span class="indent">Autumn 2018</span>
                 </li>
                 <li>
-                    AP Scholar<br />
-                    <span class="indent">2014, 2015</span>
+                    TA Funding<br />
+                    <span class="indent">CSE 340</span>
+                    <span class="indent">Spring 2019</span>
                 </li>
-            </ul>
-
-            <h3>traits</h3>
-            <ul>
-                <li>Strong work ethic</li>
-                <li>Auto-didactic</li>
-                <li>Puzzle solver</li>
+                <li>
+                    Purple and Gold<br />
+                    <span class="indent">Merit scholarship</span>
+                    <span class="indent">2015-2018</span>
+                </li>
+                <li>
+                    Dean’s List<br />
+                    <span class="indent">2015–2018</span>
+                </li>
             </ul>
         </section>
         <section id="main-event" class="col s12 m9">
-            <h3><span class="summary">sum</span>mary</h3>
-            <div class="row">
-                <p class="col s12">
-                    Full stack developer with versatile experience in functional and OOP languages, monolithic and
-                    microservice architectures, and waterfall and agile development processes. Searching for new
-                    opportunities to apply my skills at the forefront of computing while learning along the way.
-                </p>
-            </div>
-
             <h3><span class="education">edu</span>cation</h3>
             <div class="row edu">
                 <div class="col l2 m2 s3">2018 &mdash; 2019</div>
-                <span class="aside">Masters’s in Computer Science</span>
+                <span class="aside">Masters’s in Computer Science, Expected June 2019</span>
                 <h4 class="col s10">University of Washington</h4>
-
-                <div class="col m12 l10 push-l2">
-                    <p>Accepted to UW CSE's combined B.S./M.S. program for 2018</p>
-                </div>
             </div>
 
             <div class="row edu">
                 <div class="col l2 m2 s3">2015 &mdash; 2018</div>
-                <span class="aside">GPA of 3.94, Bachelor’s in Computer Science</span>
+                <span class="aside">Magna Cum Laude, 3.93 GPA, Bachelor’s in Computer Science</span>
                 <h4 class="col s10">University of Washington</h4>
-
-                <div class="col m12 l10 push-l2">
-                    <p>Third year student in UW School of Computer Science and Engineering</p>
-                    <ul>
-                        <li>Expected graduation: June 2018</li>
-                        <li>Data Structures &amp; Parallelism</li>
-                        <li>Hardware Software Interface</li>
-                        <li>Machine Learning; Artificial Intelligence</li>
-                        <li>Linear Matrix Algebra; Calculus with Analytic Geometry</li>
-                    </ul>
-                </div>
             </div>
 
             <div class="row edu">
                 <div class="col l2 m2 s3">2011 &mdash; 2015</div>
                 <span class="aside">Summa Cum Laude</span>
                 <h4 class="col s10">Westlake High School</h4>
-
-                <div class="col m12 l10 push-l2">
-                    <p>Completed seven Advanced Placement courses</p>
-
-                    <ul>
-                        <li>Self-taught AP Computer Science and achieved 5/5 exam score</li>
-                        <li>Co-founded school’s LGBT Alliance</li>
-                    </ul>
-                </div>
             </div>
 
             <h3><span class="experience">exp</span>erience</h3>
             <div class="row exp">
-                <div class="col l2 m2 s3">2017</div>
+                <div class="col l2 m2 s3">Jun-Sep &rsquo;18</div>
+                <span class="aside">Software Development Engineer Intern</span>
+                <h4 class="col s10">Xevo, AI/Machine Learning Team</h4>
+
+                <div class="col m12 l10 push-l2">
+                    <p>Focused on real-time neural based methods for object tracking in videos. Repro- duced Re3, a fast arbitrary object tracking model out of UW RSE/AI2 lab and com- bined with feature pyramid network object detector for automated tracking of cars and pedestrians in dashcam footage.</p>
+                    <ul>
+                        <li>Implemented video processing and sequencing data pipeline</li>
+                        <li>Added support for and implemented first RNN model in Xevo ML framework</li>
+                        <li>Worked in Caffe, Numpy, Tensorflow, and Tile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">Jan-&nbsp;&nbsp;&nbsp;&rsquo;'18</div>
+                <span class="aside">Grad Research Assistant</span>
+                <h4 class="col s10">UW CSE, Personal Robotics Lab</h4>
+
+                <div class="col m12 l10 push-l2">
+                    <p>
+                        Under supervision of Prof. Siddhartha Srinivasa and Tapo Bhattacharjee.<br />
+                        Trained classical learning methods to identify latent patterns in human organizational behavior for robotic desk organization. Co-authored paper to be submitted to AAMAS 2019 and developed desk organization model using vision, haptic, and NLP modalities to learn a person’s habits and to organize objects accordingly.
+                    </p>
+                    <ul>
+                        <li>Automated robotic manipulation of objects using RGBD camera and tensor- flow MaskRCNN for object detection and identification</li>
+                        <li>Compared performance of Random Forest and Markov Logic Network in learning personal organizational habits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">Jun-Sep &rsquo;17</div>
                 <span class="aside">Software Developer Intern</span>
                 <h4 class="col s10">Hulu, Ad Platform</h4>
 
                 <div class="col m12 l10 push-l2">
                     <p>
-                        Joined Ad Platform scrum team, responsible for ad serving and sales
-                        infrastructure, to create ad tracing diagnostic web service to assist in
-                        repeated ad reduction and improved customer experience.
+                        Ad Platform team responsible for ad serving and sales infrastructure, with over $1 billion in revenue per year. Created Malakai, an ad tracking and diagnostic web service, to reduce repeated and mistargeted ads to improve customer experience.
                     </p>
                     <ul>
-                        <li>Designed and implemented AngularJS single page application served through Rails 5</li>
-                        <li>Architected backend Rails API for asynchronous request processing</li>
-                        <li>Sourced data from Hive distributed database, queried via Presto</li>
-                        <li>Participated in agile development process and utilized stakeholder-centered, iterative design process</li>
+                        <li>Designed Angular SPA UI and architected Rails API for asynchronous request processing with Hive backend data source</li>
                     </ul>
                 </div>
             </div>
 
+            <h3><span class="projects">pro</span>jects</h3>
             <div class="row exp">
-                <div class="col l2 m2 s3">2016 &mdash; 2017</div>
-                <span class="aside">Developer</span>
-                <h4 class="col s10">Grade-It: University of Washington CSE Department</h4>
-
+                <div class="col l2 m2 s3">Oct-Dec &rsquo;18</div>
+                <h4 class="col s10">Automated Lip Reading</h4>
                 <div class="col m12 l10 push-l2">
                     <p>
-                        Overhauled legacy PHP application, used by UW and many other schools to grade CS
-                        assignments, by assisting in migration to Zend framework and leading construction
-                        of CI pipeline consisting of automated linting, unit testing, and deployment.</p>
-                    <ul>
-                        <li>Gained experience working on enterprise level software project</li>
-                        <li>Designed and implemented continuous integration pipeline integrated with GitLab CI</li>
-                    </ul>
+                        Automated video captioning with only video frames as input.
+                    </p>
                 </div>
             </div>
 
             <div class="row exp">
-                <div class="col l2 m2 s3">2016</div>
-                <span class="aside">Developer</span>
-                <h4 class="col s10">Practice-It: University of Washington CSE Department</h4>
-
+                <div class="col l2 m2 s3">Sep-Dec &rsquo;18</div>
+                <h4 class="col s10"><a href="https://github.com/rfrowe/cse475_18au">Creatures: Audiovisual Flock of Embedded Systems</a></h4>
                 <div class="col m12 l10 push-l2">
                     <p>
-                        Worked as part of a four-member faculty team to improve Practice-It, a
-                        website run by the University of Washington that is used by hundreds of thousands of people
-                        globally to practice and learn programming. Improved frontend usability as well as enhanced
-                        backend and added new features to both.
+                        Led Embedded Capstone course final project for 50 students: flock of &ldquo;creatures&rdquo; with light and sound behaviors. Designed course spec for behavioral and communication protocol in 1 week. In 2 days implemented C++ state machine, radio communication, and probabilistic transitions for exhibiting emergent flock behavior.
                     </p>
-                    <ul>
-                        <li>Gained experience working on enterprise level software</li>
-                        <li>Collaborated with other team members using version control software</li>
-                        <li>Developed and improved frontend and backend interfaces</li>
-                    </ul>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">Jan-Mar &rsquo;18</div>
+                <h4 class="col s10">UW Housing and Food Services Virtual Tours
+                </h4>
+                <div class="col m12 l10 push-l2">
+                    <p>
+                        Led group of 5 in Immersive Environments course to create prototype virtual tour for UW dorms in 3 weeks as a touring alternative for prospective out-of-state students. After prototyping, we designed a realistic VR tour at UW HFS’s request in Unity3D for use with Google Cardboard from floor plans for dorms currently under construction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row exp">
+                <div class="col l2 m2 s3">Mar-Jun &rsquo;17</div>
+                <h4 class="col s10"><a href="https://gitlab.cs.washington.edu/rfrowe/tweetomatic">Tweetomatic</a>
+                </h4>
+                <div class="col m12 l10 push-l2">
+                    <p>
+                        Used Stanford NLP, GATE Twitter POS tagger, and SentiWordNet to approximate via Twitter public opinion of Islam and Muslims in the United States for UW Bothell.
+                    </p>
                 </div>
             </div>
         </section>

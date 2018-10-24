@@ -72,14 +72,14 @@ main {
 	margin-top: 0;
 }
 
-#main-event span.summary {
+#main-event span.projects, #main-event .pro span.aside {
 	color: #12F493;
 }
 #main-event span.education, #main-event .edu span.aside {
-	color: #2196F3;
+	color: #8047ED;
 }
 #main-event span.experience, #main-event .exp span.aside {
-	color: #8047ED;
+	color: #2196F3;
 }
 
 #main-event span.aside {
